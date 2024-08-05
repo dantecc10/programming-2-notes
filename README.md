@@ -8,6 +8,12 @@ Clase de Programación II de la Ingeniería en Ciencias de la Computación.
 - Lenguaje de programación orientado a objetos: elementos avanzados.
 - Tópicos avanzados de la programación.
 
+# Evaluación
+- Exámenes (Departamental) ECAA'S: 35%
+- Tareas: 15%
+- Prácticas: 15%
+- Proyecto: 35%
+
 # Bibliografía
 - Joyanes Aguilar (2011). Programación en Java. McGraw Hill.
 - Ceballos (2011). Java 2. Curso de programación AlfaOmega - Rama.
