@@ -1,6 +1,10 @@
 # programming-2-notes
 Clase de Programación II de la Ingeniería en Ciencias de la Computación.
 
+# Docente
+Dra. Beatriz Beltrán.
+Cubículo en CC01-125
+
 # Temario
 - Conceptos básicos del paradigma orientado a objetos.
 - Abstracción del mundo real al POO.
