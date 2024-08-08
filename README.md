@@ -54,6 +54,12 @@ La **generalización** es el acto de capturar similitudes entre clases y definir
 
 Una clase **especializada** se conoce como ***subclase***, mientras que una clase **generalizada** se conoce como ***superclase***.
 
+# Polimorfismo
+
+Es la **habilidad** que tienen los objtos de **responder de diferente forma ante los mismos mensajes**.
+
+Es aquella prioridad en que un método tiene el **mismo nombre** en **diferentes clases**, pero se **ejecuta** de **diferentes formas** en cada clase.
+
 # Arreglos (estructura de datos)
 
 ## Organización lógica
