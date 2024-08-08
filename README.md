@@ -40,6 +40,14 @@ La ventaja de estructurar las clases en una jerarquía es **fomentar la reutiliz
 
 La jerarquía es la capacidad de manejar niveles de abstracción.
 
+## Generalización - Especialización
+
+La **generalización** es el acto de capturar similitudes entre clases y definir las similitudes en una nueva clase generalizada.
+
+**Especialización** es el acto de capturar diferencias entre objetos en una clase y crear nuevas subclases distintas a partir de las diferencias.
+
+Una clase **especializada** se conoce como ***subclase***, mientras que una clase **generalizada** se conoce como ***superclase***.
+
 # Arreglos (estructura de datos)
 
 ## Organización lógica
