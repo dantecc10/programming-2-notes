@@ -30,6 +30,12 @@ Por lo tanto, se tiene que las E. D. se clasifican en:
 
 Es la capacidad de los elemenetos de una jerarquía, de transmitir sus características desde los niveles más abstractos a los más concretos.
 
+La herencia también es el mecanismo para **propagar** (**atributos** y **métodos**) de las **superclases** a las **subclases**; es decir, la herencia es la habilidad de una subclase de tomar las propiedades generales de una superclas en la cadena de herencia (jerarquía de clases).
+
+Cada vez que se especializa una clase, esta hereda atribuos y comportamientos de su superclase; pero además **añade nuevos comportamientos** o se modifica alguno de los ya heredados.
+
+La herencia promueve la **reutilización del software** y evita la **duplicidad** de información.
+
 ## Jerarquía
 
 En POO, los objetos poseen características que los hacen únicos, así como características que comparten con otro objetos.
