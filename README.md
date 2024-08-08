@@ -26,6 +26,22 @@ Por lo tanto, se tiene que las E. D. se clasifican en:
 - Estáticas.
 - Dinámicas.
 
+# Arreglos
+
+## Organización lógica
+
+- Dimensiones.
+- Límite inferior y superior de cada dimensión.
+- Tipo de elementos.
+
+## Organización física
+
+- Dirección inicial (de un intervalo de memoria).
+- Tamaño de los elementos.
+- Orden de las dimensiones.
+- Desplazamientos.
+
+
 # Evaluación
 
 - Exámenes (Departamental) ECAA'S: 35%
