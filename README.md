@@ -26,7 +26,19 @@ Por lo tanto, se tiene que las E. D. se clasifican en:
 - Estáticas.
 - Dinámicas.
 
-# Arreglos
+# Herencia
+
+## Jerarquía
+
+En POO, los objetos poseen características que los hacen únicos, así como características que comparten con otro objetos.
+
+Aquellos objetos que **comparten** las mismas **características** o similares se agrupan en **clases** y estas pueden **organizarse jerarquicamente**.
+
+La ventaja de estructurar las clases en una jerarquía es **fomentar la reutilización** y **evitar la redundancia** y la duplicidad de información.
+
+La jerarquía es la capacidad de manejar niveles de abstracción.
+
+# Arreglos (estructura de datos)
 
 ## Organización lógica
 
@@ -41,6 +53,7 @@ Por lo tanto, se tiene que las E. D. se clasifican en:
 - Orden de las dimensiones.
 - Desplazamientos.
 
+Nota: La maestra se equivocó y nos estaba dando la clase de estructuras de programación, pero dejaré este apunte...
 
 # Evaluación
 
