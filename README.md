@@ -28,6 +28,8 @@ Por lo tanto, se tiene que las E. D. se clasifican en:
 
 # Herencia
 
+Es la capacidad de los elemenetos de una jerarquía, de transmitir sus características desde los niveles más abstractos a los más concretos.
+
 ## Jerarquía
 
 En POO, los objetos poseen características que los hacen únicos, así como características que comparten con otro objetos.
