@@ -62,6 +62,20 @@ Es aquella prioridad en que un método tiene el **mismo nombre** en **diferentes
 
 El **polimorfismo** se hace en tiempo de ejecución porque dutante la compilación no se conoce qué tipo de objeto ni qué operación ha sido llamada. Es la habilidad de esconder diferentes implementaciones tras un solo interface.
 
+# Modelo conceptual
+
+ES el primer modelo de clases que se debe hacer y reúne las abstracciones principales (key abstractions) del sistema que desea construir:
+
+- ES un primer inteno de definir la estructura del sistema.
+- Se obtiene al examinar la descripción del problema y en entrevistas con los expertos del dominio.
+- Se usa como una base de entendimiento y cooperación con los expertos de dominio y/o clientes.
+- No debe incluir los detalles de las clases, sólo unificarlas.
+
+Incluye:
+
+- Diccionario del modelo.
+- Uno o más diagramas de clases (normalemente solamente uno).
+
 # Arreglos (estructura de datos)
 
 ## Organización lógica
