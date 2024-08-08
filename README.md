@@ -60,6 +60,8 @@ Es la **habilidad** que tienen los objtos de **responder de diferente forma ante
 
 Es aquella prioridad en que un método tiene el **mismo nombre** en **diferentes clases**, pero se **ejecuta** de **diferentes formas** en cada clase.
 
+El **polimorfismo** se hace en tiempo de ejecución porque dutante la compilación no se conoce qué tipo de objeto ni qué operación ha sido llamada. Es la habilidad de esconder diferentes implementaciones tras un solo interface.
+
 # Arreglos (estructura de datos)
 
 ## Organización lógica
