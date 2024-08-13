@@ -153,6 +153,12 @@ Las clases deben ser lo suficientemente cerradas para ocultar información hacia
 
 *Principio **ABIERTO-CERRADO***.
 
+UN método es la operación que se puede efecutar sobre los campos (datos) de un objeto. Cuando el método es invocado se dice que se envía un mensaje al objeto a través del método; es esta la forma como el obejto cambia su estado.
+
+La identidad es la propiedad con la cual se puede distinguir un objeto de otros objetos (su nombre),
+
+Datos (atributos): Son los campos del objeto que representan características bien definidas de un objeto.
+
 ### Principio de Parnas u ocultamiento
 
 No permitir que los usuarios modifiquen ni la representación de la información, ni las operaciones sobre esa información.
