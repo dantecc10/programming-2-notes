@@ -159,6 +159,15 @@ La identidad es la propiedad con la cual se puede distinguir un objeto de otros 
 
 Datos (atributos): Son los campos del objeto que representan características bien definidas de un objeto.
 
+## Beneficios de la programación orientada a objetos
+
+Algunos beneficios son:
+
+- Mantenibilidad: Facilidad de mantenimiento.
+- Modificabilidad: Facilidad para modificiar los programas.
+- Reusabilidad: Los objetos si han sido correctamente diseñados, se pueden usar numerosas veces y en distintos proyectos.
+- Fiabilidad: Los programas orientados a objetos suelen ser más fiables ya que se basan en el uso de objetos ya definidos que están ampliamente probados.
+
 ### Principio de Parnas u ocultamiento
 
 No permitir que los usuarios modifiquen ni la representación de la información, ni las operaciones sobre esa información.
