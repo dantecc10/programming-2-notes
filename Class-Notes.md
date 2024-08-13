@@ -189,7 +189,11 @@ Se compone de tres elementos básicos:
 - Elementos:
 - Relaciones:
 - Diagramas.
-  Existen cuatro tipos de elementos en UML, dependiendo del uso que se haga de ellos: *elementos estructurales*, 
+  Existen cuatro tipos de elementos en UML, dependiendo del uso que se haga de ellos: *elementos estructurales*,
+
+Tipos de elementos: En su mayoría; son las partes estáticas del modelo y representan cosas que son conceptuales o materiales.
+
+- Estructurales:
 
 # Evaluación
 
