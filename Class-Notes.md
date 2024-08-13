@@ -184,6 +184,13 @@ UML es un lenguaje que proporciona un vocabulario y las reglas para utilizarlo, 
 
 ES un lenguaje que nos ayuda a interpretar grandes sistemas mediante gráficos o mediante texto obteniendo modelos explícitos que ayudan a la comunicación dutante el desarrollo ya que al ser estandar, los modelos podrán ser interpretados por personas que no participaron en su diseño sin ninguna ambigüedad.
 
+Se compone de tres elementos básicos:
+
+- Elementos:
+- Relaciones:
+- Diagramas.
+  Existen cuatro tipos de elementos en UML, dependiendo del uso que se haga de ellos: *elementos estructurales*, 
+
 # Evaluación
 
 - Exámenes (Departamental) ECAA'S: 35%
