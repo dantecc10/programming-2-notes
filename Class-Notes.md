@@ -76,6 +76,48 @@ Incluye:
 - Diccionario del modelo.
 - Uno o más diagramas de clases (normalemente solamente uno).
 
+# Clases
+
+El nombre de una clase, debe ser el sustantivo singular que mejor caracteriza la abstracción que se quiere representar con esa clase.
+
+El que haya difucltad para nombrar una clase, puede ser indicio de que la abstracción que esta representa no se entiende bien o no está bien definida. Los nombres de las clases deben tomarse directamente del vocabulrio del dominio.
+
+- Se debe evitar
+
+# Tarjetas CRC (Clase-Responsabilidad-Colaboración)
+
+Introducidas en 1989 por Ward Cunningham y Kent Beck en OOPSLA.
+
+Es una tarjeta originalmente de 4" por 6" que muestra:
+
+- El nombre y descripción de la clase.
+- Las responsabilidades de la clase.
+- Conocimiento interno de la clase.
+- Servicios que brinda la clase.
+- Los colaboradores con los que interactúa la clase.
+- Un colaborador es una clase cuyos servicios son necesarios para cumplir con una responsabilidad.
+
+Ejemplo:
+
+|                                   Clase: Venta                                   | [Se puede añadir una descripción] |
+| :-------------------------------------------------------------------------------: | :---------------------------------: |
+|                                 Responsabilidades                                 |           Colaboraciones           |
+| Ingresar cliente<br />Mostrar cliente<br />Ingresar producto<br />Calcular precio |        Cliente<br />Producto        |
+
+## Beneficios
+
+Los patrones de colaboración surgen a medida que más y más escenarios se completan.
+
+Las tarjetas se pueden distribuir físicamente para reprsetnar las colboraciones estrechas. ESto puede ayudar a identificar.
+
+Las cosas van bien sí:
+
+- Todas las clases tienen nombres significativos y especificación del dominio.
+- Cada clase tiene un grupo pequeño de colaboradores.
+- No hay clases indispensables.
+- La información de cada clase cabe bien dentro de una tarjeta 3" x 5".
+- Un cambio en lso requerimientos puede ser manejado por las clases.
+
 # Arreglos (estructura de datos)
 
 ## Organización lógica
@@ -92,6 +134,34 @@ Incluye:
 - Desplazamientos.
 
 Nota: La maestra se equivocó y nos estaba dando la clase de estructuras de programación, pero dejaré este apunte...
+
+# Programación Orientada a Objetos
+
+En lugar de modelar un problema en algo familiar a la computadora, ahora se trata de acercar la computadora al problema. Modelar la realidad del problema a través de entidades independientes pero que interactúan entre sí y cuyas fronteras no estén determindas por su instrumentación computacional, sino por la naturaleza del problema. EStas entidades se denominan objetos.
+
+Resolver problemas consiste en definir obejtos y sus acciones para así invocar las acciones enviando mensajes a los objetos que ocultan las características internas de cómo llevan a cabo estas acciones.
+
+La POO es una técnica de programación cuyo soporte fundamental es el objeto.
+
+Un objeto es una extensión de un TDA (Tipo de Dato Abstracto).
+
+Un TDA es un tipo definido por el usuario, que encapsula un conjunto de datos y las operaciones sobre estos datos.
+
+Cuando programamos en POO, definimos clases que expresan una determinada funcionalidad la cual es común a todos los individuos que pertenecen a una clase.
+
+Las clases deben ser lo suficientemente cerradas para ocultar información hacia el exterior; mientras que deben ser lo suficientemente abiertas para permitir la reutilización, adaptación y extensión de las mismas a nuevas funcionalidades sin correr el riesgo de afectar el funcionamiento de lo que ya es correcto.
+
+*Principio **ABIERTO-CERRADO***.
+
+### Principio de Parnas u ocultamiento
+
+No permitir que los usuarios modifiquen ni la representación de la información, ni las operaciones sobre esa información.
+
+### Principio de compartir comportamiento
+
+Reutilizar código, no reinventarlo.
+
+Los mensajes entre los objeto son síncronos, al conjunto de mensajes que responde le llamamos protocolo. Un cálculo en la POO se lleva a cabo mediante el envío de mensajes entre objetos.
 
 # Evaluación
 
