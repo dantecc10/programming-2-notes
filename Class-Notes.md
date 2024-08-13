@@ -178,6 +178,12 @@ Reutilizar código, no reinventarlo.
 
 Los mensajes entre los objeto son síncronos, al conjunto de mensajes que responde le llamamos protocolo. Un cálculo en la POO se lleva a cabo mediante el envío de mensajes entre objetos.
 
+# UML (Unified Model Language)
+
+UML es un lenguaje que proporciona un vocabulario y las reglas para utilizarlo, además es un lenguaje de modelado, lo que significa que el vocabulario y las reglas se utilizan para la representación conceptual y física del sistema.
+
+ES un lenguaje que nos ayuda a interpretar grandes sistemas mediante gráficos o mediante texto obteniendo modelos explícitos que ayudan a la comunicación dutante el desarrollo ya que al ser estandar, los modelos podrán ser interpretados por personas que no participaron en su diseño sin ninguna ambi
+
 # Evaluación
 
 - Exámenes (Departamental) ECAA'S: 35%
