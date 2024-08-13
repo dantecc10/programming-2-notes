@@ -159,7 +159,7 @@ La identidad es la propiedad con la cual se puede distinguir un objeto de otros 
 
 Datos (atributos): Son los campos del objeto que representan características bien definidas de un objeto.
 
-## Beneficios de la programación orientada a objetos
+## Beneficios de la Programación Orientada a Objetos
 
 Algunos beneficios son:
 
