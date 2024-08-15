@@ -36,21 +36,6 @@ int main()
         scanf("%d", &opcion);
         getchar(); // Limpiar el buffer
 
-        switch(opcion) {
-            case 1:
-                altaAbogado();
-                break;
-            case 2:
-                mostrarAbogado();
-                break;
-            case 3:
-                mostrarTodos();
-                break;
-            case 4:
-                printf("\nSaliendo...!");
-                break;
-            default:
-                printf("\nOpción no válida. Intente de nuevo.\n");
         switch (opcion)
         {
         case 1:
