@@ -27,7 +27,8 @@ int main() {
         printf("\nAgenda de Abogados\n");
         printf("1. Alta de abogado\n");
         printf("2. Mostrar un abogado\n");
-        printf("3. Mostrar todos los abogados\n\n");
+        printf("3. Mostrar todos los abogados\n");
+        printf("4. Salir\n\n");
         printf("Seleccione una opción: ");
         scanf("%d", &opcion);
         getchar(); // Limpiar el buffer
