@@ -20,7 +20,7 @@ int main()
             if (!archivo)
             {
                 printf("Error al abrir el archivo.\n");
-                return;
+                return 0;
             }
         }
     }
