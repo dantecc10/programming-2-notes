@@ -8,7 +8,8 @@
 #define MAX_HORARIO 50
 #define MAX_ESPECIALIDAD 30
 
-typedef struct {
+typedef struct
+{
     char nombre[MAX_NOMBRE];
     char direccion[MAX_DIRECCION];
     char telefono[MAX_TELEFONO];
@@ -20,10 +21,12 @@ void altaAbogado();
 void mostrarAbogado();
 void mostrarTodos();
 
-int main() {
+int main()
+{
     int opcion;
 
-    do {
+    do
+    {
         printf("\nAgenda de Abogados\n");
         printf("1. Alta de abogado\n");
         printf("2. Mostrar un abogado\n");
@@ -33,27 +36,29 @@ int main() {
         scanf("%d", &opcion);
         getchar(); // Limpiar el buffer
 
-        switch(opcion) {
-            case 1:
-                altaAbogado();
-                break;
-            case 2:
-                mostrarAbogado();
-                break;
-            case 3:
-                mostrarTodos();
-                break;
-            case 4:
-                printf("\nSaliendo...!");
-            default:
-                printf("\nOpción no válida. Intente de nuevo.\n");
+        switch (opcion)
+        {
+        case 1:
+            altaAbogado();
+            break;
+        case 2:
+            mostrarAbogado();
+            break;
+        case 3:
+            mostrarTodos();
+            break;
+        case 4:
+            printf("\nSaliendo...!");
+        default:
+            printf("\nOpción no válida. Intente de nuevo.\n");
         }
-    } while(opcion != 4);
+    } while (opcion != 4);
 
     return 0;
 }
 
-void altaAbogado() {
+void altaAbogado()
+{
     Abogado abogado;
     FILE *archivo;
 
@@ -77,10 +82,19 @@ void altaAbogado() {
     fgets(abogado.especialidad, MAX_ESPECIALIDAD, stdin);
     abogado.especialidad[strcspn(abogado.especialidad, "\n")] = 0;
 
-    archivo = fopen("abogados.dat", "ab");
-    if (archivo == NULL) {
-        printf("Error al abrir el archivo.\n");
-        return;
+    archivo = fopen("../abogados.dat", "ab");
+    if (!archivo)
+    {
+        archivo = fopen("abogados.dat", "ab");
+        if (!archivo)
+        {
+            archivo = fopen("output/abogados.dat", "ab");
+            if (!archivo)
+            {
+                printf("Error al abrir el archivo.\n");
+                return;
+            }
+        }
     }
 
     fwrite(&abogado, sizeof(Abogado), 1, archivo);
@@ -89,7 +103,8 @@ void altaAbogado() {
     printf("Abogado registrado con éxito.\n");
 }
 
-void mostrarAbogado() {
+void mostrarAbogado()
+{
     Abogado abogado;
     FILE *archivo;
     char nombreBuscar[MAX_NOMBRE];
@@ -100,13 +115,16 @@ void mostrarAbogado() {
     nombreBuscar[strcspn(nombreBuscar, "\n")] = 0;
 
     archivo = fopen("abogados.dat", "rb");
-    if (archivo == NULL) {
+    if (archivo == NULL)
+    {
         printf("Error al abrir el archivo.\n");
         return;
     }
 
-    while(fread(&abogado, sizeof(Abogado), 1, archivo) == 1) {
-        if (strcmp(abogado.nombre, nombreBuscar) == 0) {
+    while (fread(&abogado, sizeof(Abogado), 1, archivo) == 1)
+    {
+        if (strcmp(abogado.nombre, nombreBuscar) == 0)
+        {
             printf("\nNombre: %s\n", abogado.nombre);
             printf("Dirección: %s\n", abogado.direccion);
             printf("Teléfono: %s\n", abogado.telefono);
@@ -117,25 +135,29 @@ void mostrarAbogado() {
         }
     }
 
-    if (!encontrado) {
+    if (!encontrado)
+    {
         printf("Abogado no encontrado.\n");
     }
 
     fclose(archivo);
 }
 
-void mostrarTodos() {
+void mostrarTodos()
+{
     Abogado abogado;
     FILE *archivo;
     int contador = 0;
 
     archivo = fopen("abogados.dat", "rb");
-    if (archivo == NULL) {
+    if (archivo == NULL)
+    {
         printf("Error al abrir el archivo.\n");
         return;
     }
 
-    while(fread(&abogado, sizeof(Abogado), 1, archivo) == 1) {
+    while (fread(&abogado, sizeof(Abogado), 1, archivo) == 1)
+    {
         printf("\nAbogado #%d\n", ++contador);
         printf("Nombre: %s\n", abogado.nombre);
         printf("Dirección: %s\n", abogado.direccion);
@@ -145,7 +167,8 @@ void mostrarTodos() {
         printf("--------------------\n");
     }
 
-    if (contador == 0) {
+    if (contador == 0)
+    {
         printf("No hay abogados registrados.\n");
     }
 
