@@ -44,7 +44,7 @@ int main() {
                 mostrarTodos();
                 break;
             case 4:
-                printf("\nHasta pronto!");
+                printf("\nSaliendo...!");
             default:
                 printf("\nOpción no válida. Intente de nuevo.\n");
         }
