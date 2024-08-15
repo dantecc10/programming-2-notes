@@ -10,13 +10,13 @@ int main()
 {
     FILE *archivo;
 
-    archivo = fopen("../abogados.dat", "ab");
+    archivo = fopen(path1, "ab");
     if (!archivo)
     {
-        archivo = fopen("abogados.dat", "ab");
+        archivo = fopen(path2, "ab");
         if (!archivo)
         {
-            archivo = fopen("output/abogados.dat", "ab");
+            archivo = fopen(path3, "ab");
             if (!archivo)
             {
                 printf("Error al abrir el archivo.\n");
