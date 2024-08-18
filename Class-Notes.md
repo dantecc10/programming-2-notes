@@ -84,7 +84,7 @@ El que haya difucltad para nombrar una clase, puede ser indicio de que la abstra
 
 Una clase que no cuenta con atributps es una clase sin estado y se denomina degenerada. La clase math es una clase degenerada que consiste en un conjunto de funciones matemáticas.
 
-# Tarjetas CRC (Clase-Responsabilidad-Colaboración)
+# Tarjetas CRC (Clase - Responsabilidad - Colaboración)
 
 Introducidas en 1989 por Ward Cunningham y Kent Beck en OOPSLA.
 
