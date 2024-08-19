@@ -82,7 +82,7 @@ El nombre de una clase, debe ser el sustantivo singular que mejor caracteriza la
 
 El que haya difucltad para nombrar una clase, puede ser indicio de que la abstracción que esta representa no se entiende bien o no está bien definida. Los nombres de las clases deben tomarse directamente del vocabulrio del dominio.
 
-- Se debe evitar
+Una clase que no cuenta con atributps es una clase sin estado y se denomina degenerada. La clase math es una clase degenerada que consiste en un conjunto de funciones matemáticas.
 
 # Tarjetas CRC (Clase-Responsabilidad-Colaboración)
 
