@@ -8,6 +8,8 @@
 #define MAX_HORARIO 50
 #define MAX_ESPECIALIDAD 30
 
+// Comentario para ver si mi sistema ya escribe bien
+
 typedef struct {
     char nombre[MAX_NOMBRE];
     char direccion[MAX_DIRECCION];
