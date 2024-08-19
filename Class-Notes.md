@@ -84,6 +84,18 @@ El que haya difucltad para nombrar una clase, puede ser indicio de que la abstra
 
 Una clase que no cuenta con atributps es una clase sin estado y se denomina degenerada. La clase math es una clase degenerada que consiste en un conjunto de funciones matemáticas.
 
+## Asociación
+
+Es una relación que describe una conexión conceptual entre dos objetos, no es una relación fuerte poque el tiempo de vida de un objeto no depende del otro.
+
+El tipo más común de asociación es una asociación binaria entre dos clases.
+
+- Un jugador pertenece a un equipo.
+- Un profesor imparte una materia.
+- Un médico trabaja en un hospital.
+
+  En estos casos la asociación es en una direcció, aunque en otros casos los objetos pueden relacionarse en más de una forma.
+
 # Tarjetas CRC (Clase-Responsabilidad-Colaboración)
 
 Introducidas en 1989 por Ward Cunningham y Kent Beck en OOPSLA.
