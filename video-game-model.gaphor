@@ -36,6 +36,8 @@ controlflow {
 <reflist>
 <ref refid="62ef7f96-6039-11ef-9bbe-0dc5f713f0e8"/>
 <ref refid="dea8c436-603c-11ef-8154-0dc5f713f0e8"/>
+<ref refid="1dd627bb-609f-11ef-a652-2b73aa027338"/>
+<ref refid="58909d89-609f-11ef-a77c-2b73aa027338"/>
 </reflist>
 </ownedType>
 </Package>
@@ -444,8 +446,10 @@ existing classes or even new classes with specific responsibilities.</val>
 </name>
 <ownedPresentation>
 <reflist>
-<ref refid="dea97307-603c-11ef-9468-0dc5f713f0e8"/>
 <ref refid="62f075ff-6039-11ef-a66d-0dc5f713f0e8"/>
+<ref refid="dea97307-603c-11ef-9468-0dc5f713f0e8"/>
+<ref refid="1dd6dada-609f-11ef-981b-2b73aa027338"/>
+<ref refid="5891bdf0-609f-11ef-91c0-2b73aa027338"/>
 </reflist>
 </ownedPresentation>
 </Diagram>
@@ -757,6 +761,188 @@ existing classes or even new classes with specific responsibilities.</val>
 </class_>
 <name>
 <val>morir</val>
+</name>
+</Property>
+<Class id="1dd627bb-609f-11ef-a652-2b73aa027338">
+<name>
+<val>Inmueble</val>
+</name>
+<ownedAttribute>
+<reflist>
+<ref refid="2fe64c31-609f-11ef-bd3a-2b73aa027338"/>
+<ref refid="42d7768a-609f-11ef-b679-2b73aa027338"/>
+<ref refid="48d8bdad-609f-11ef-87fc-2b73aa027338"/>
+<ref refid="513b0047-609f-11ef-bdfc-2b73aa027338"/>
+<ref refid="53e62176-609f-11ef-927a-2b73aa027338"/>
+<ref refid="6e68ebce-609f-11ef-92c8-2b73aa027338"/>
+</reflist>
+</ownedAttribute>
+<package>
+<ref refid="58d6c2e8-66f8-11ec-b4c8-0456e5e540ed"/>
+</package>
+<presentation>
+<reflist>
+<ref refid="1dd6dada-609f-11ef-981b-2b73aa027338"/>
+</reflist>
+</presentation>
+</Class>
+<ClassItem id="1dd6dada-609f-11ef-981b-2b73aa027338">
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, 150.28753772938907, 550.2803955078125)</val>
+</matrix>
+<top-left>
+<val>(0.0, 0.0)</val>
+</top-left>
+<width>
+<val>125.0</val>
+</width>
+<height>
+<val>159.0</val>
+</height>
+<diagram>
+<ref refid="5b5e374a-6039-11ef-a1e6-0dc5f713f0e8"/>
+</diagram>
+<subject>
+<ref refid="1dd627bb-609f-11ef-a652-2b73aa027338"/>
+</subject>
+</ClassItem>
+<Property id="2fe64c31-609f-11ef-bd3a-2b73aa027338">
+<class_>
+<ref refid="1dd627bb-609f-11ef-a652-2b73aa027338"/>
+</class_>
+<name>
+<val>id_inmueble</val>
+</name>
+</Property>
+<Property id="42d7768a-609f-11ef-b679-2b73aa027338">
+<class_>
+<ref refid="1dd627bb-609f-11ef-a652-2b73aa027338"/>
+</class_>
+<name>
+<val>capacidad</val>
+</name>
+</Property>
+<Property id="48d8bdad-609f-11ef-87fc-2b73aa027338">
+<class_>
+<ref refid="1dd627bb-609f-11ef-a652-2b73aa027338"/>
+</class_>
+<name>
+<val>salud</val>
+</name>
+</Property>
+<Property id="513b0047-609f-11ef-bdfc-2b73aa027338">
+<class_>
+<ref refid="1dd627bb-609f-11ef-a652-2b73aa027338"/>
+</class_>
+<name>
+<val>posición_x</val>
+</name>
+</Property>
+<Property id="53e62176-609f-11ef-927a-2b73aa027338">
+<class_>
+<ref refid="1dd627bb-609f-11ef-a652-2b73aa027338"/>
+</class_>
+<name>
+<val>posición_y</val>
+</name>
+</Property>
+<Class id="58909d89-609f-11ef-a77c-2b73aa027338">
+<name>
+<val>Muebles</val>
+</name>
+<ownedAttribute>
+<reflist>
+<ref refid="5ca2772b-609f-11ef-b10a-2b73aa027338"/>
+<ref refid="60f662d6-609f-11ef-9d32-2b73aa027338"/>
+<ref refid="786866be-609f-11ef-adbe-2b73aa027338"/>
+<ref refid="7cf54d56-609f-11ef-9f75-2b73aa027338"/>
+<ref refid="82c3b21f-609f-11ef-9968-2b73aa027338"/>
+<ref refid="85b25734-609f-11ef-abc3-2b73aa027338"/>
+</reflist>
+</ownedAttribute>
+<package>
+<ref refid="58d6c2e8-66f8-11ec-b4c8-0456e5e540ed"/>
+</package>
+<presentation>
+<reflist>
+<ref refid="5891bdf0-609f-11ef-91c0-2b73aa027338"/>
+</reflist>
+</presentation>
+</Class>
+<ClassItem id="5891bdf0-609f-11ef-91c0-2b73aa027338">
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, 379.67072517801626, 557.1205749511719)</val>
+</matrix>
+<top-left>
+<val>(0.0, 0.0)</val>
+</top-left>
+<width>
+<val>112.0</val>
+</width>
+<height>
+<val>159.0</val>
+</height>
+<diagram>
+<ref refid="5b5e374a-6039-11ef-a1e6-0dc5f713f0e8"/>
+</diagram>
+<subject>
+<ref refid="58909d89-609f-11ef-a77c-2b73aa027338"/>
+</subject>
+</ClassItem>
+<Property id="5ca2772b-609f-11ef-b10a-2b73aa027338">
+<class_>
+<ref refid="58909d89-609f-11ef-a77c-2b73aa027338"/>
+</class_>
+<name>
+<val>id_mueble</val>
+</name>
+</Property>
+<Property id="60f662d6-609f-11ef-9d32-2b73aa027338">
+<class_>
+<ref refid="58909d89-609f-11ef-a77c-2b73aa027338"/>
+</class_>
+<name>
+<val>tipo_mueble</val>
+</name>
+</Property>
+<Property id="6e68ebce-609f-11ef-92c8-2b73aa027338">
+<class_>
+<ref refid="1dd627bb-609f-11ef-a652-2b73aa027338"/>
+</class_>
+<name>
+<val>tipo_inmueble</val>
+</name>
+</Property>
+<Property id="786866be-609f-11ef-adbe-2b73aa027338">
+<class_>
+<ref refid="58909d89-609f-11ef-a77c-2b73aa027338"/>
+</class_>
+<name>
+<val>daño</val>
+</name>
+</Property>
+<Property id="7cf54d56-609f-11ef-9f75-2b73aa027338">
+<class_>
+<ref refid="58909d89-609f-11ef-a77c-2b73aa027338"/>
+</class_>
+<name>
+<val>munición</val>
+</name>
+</Property>
+<Property id="82c3b21f-609f-11ef-9968-2b73aa027338">
+<class_>
+<ref refid="58909d89-609f-11ef-a77c-2b73aa027338"/>
+</class_>
+<name>
+<val>posición_x</val>
+</name>
+</Property>
+<Property id="85b25734-609f-11ef-abc3-2b73aa027338">
+<class_>
+<ref refid="58909d89-609f-11ef-a77c-2b73aa027338"/>
+</class_>
+<name>
+<val>posición_y</val>
 </name>
 </Property>
 </gaphor>
