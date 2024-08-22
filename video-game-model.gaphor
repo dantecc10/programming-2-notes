@@ -35,6 +35,7 @@ controlflow {
 <ownedType>
 <reflist>
 <ref refid="62ef7f96-6039-11ef-9bbe-0dc5f713f0e8"/>
+<ref refid="dea8c436-603c-11ef-8154-0dc5f713f0e8"/>
 </reflist>
 </ownedType>
 </Package>
@@ -443,6 +444,7 @@ existing classes or even new classes with specific responsibilities.</val>
 </name>
 <ownedPresentation>
 <reflist>
+<ref refid="dea97307-603c-11ef-9468-0dc5f713f0e8"/>
 <ref refid="62f075ff-6039-11ef-a66d-0dc5f713f0e8"/>
 </reflist>
 </ownedPresentation>
@@ -460,6 +462,9 @@ existing classes or even new classes with specific responsibilities.</val>
 <ref refid="7a09cbe9-6039-11ef-b907-0dc5f713f0e8"/>
 <ref refid="7c0d1b18-6039-11ef-b62f-0dc5f713f0e8"/>
 <ref refid="8f114c47-6039-11ef-a58e-0dc5f713f0e8"/>
+<ref refid="facc41f2-603c-11ef-9c28-0dc5f713f0e8"/>
+<ref refid="fd9966d0-603c-11ef-b1b1-0dc5f713f0e8"/>
+<ref refid="3e1d138d-603d-11ef-a0b1-0dc5f713f0e8"/>
 </reflist>
 </ownedAttribute>
 <ownedOperation>
@@ -467,6 +472,8 @@ existing classes or even new classes with specific responsibilities.</val>
 <ref refid="82f26f92-6039-11ef-a7fe-0dc5f713f0e8"/>
 <ref refid="87e02e63-6039-11ef-9d29-0dc5f713f0e8"/>
 <ref refid="8cae7764-6039-11ef-8b46-0dc5f713f0e8"/>
+<ref refid="f33535e9-603c-11ef-8e8c-0dc5f713f0e8"/>
+<ref refid="3ba70dff-603d-11ef-8b91-0dc5f713f0e8"/>
 </reflist>
 </ownedOperation>
 <package>
@@ -480,16 +487,16 @@ existing classes or even new classes with specific responsibilities.</val>
 </Class>
 <ClassItem id="62f075ff-6039-11ef-a66d-0dc5f713f0e8">
 <matrix>
-<val>(1.0, 0.0, 0.0, 1.0, 356.5972651728877, 265.47031995985236)</val>
+<val>(1.0, 0.0, 0.0, 1.0, 199.14416970147028, 257.3673378273292)</val>
 </matrix>
 <top-left>
-<val>(-127.71326394416243, 0.0)</val>
+<val>(-127.71326394416243, -85.0)</val>
 </top-left>
 <width>
 <val>282.71326394416246</val>
 </width>
 <height>
-<val>227.0</val>
+<val>312.0</val>
 </height>
 <diagram>
 <ref refid="5b5e374a-6039-11ef-a1e6-0dc5f713f0e8"/>
@@ -503,7 +510,7 @@ existing classes or even new classes with specific responsibilities.</val>
 <ref refid="62ef7f96-6039-11ef-9bbe-0dc5f713f0e8"/>
 </class_>
 <name>
-<val>id</val>
+<val>id_personaje</val>
 </name>
 </Property>
 <Property id="6e67c8f2-6039-11ef-ad20-0dc5f713f0e8">
@@ -576,6 +583,180 @@ existing classes or even new classes with specific responsibilities.</val>
 </class_>
 <name>
 <val>artículos_portados</val>
+</name>
+</Property>
+<Class id="dea8c436-603c-11ef-8154-0dc5f713f0e8">
+<name>
+<val>Enemigo</val>
+</name>
+<ownedAttribute>
+<reflist>
+<ref refid="e3a1f040-603c-11ef-8d08-0dc5f713f0e8"/>
+<ref refid="033535d5-603d-11ef-9b17-0dc5f713f0e8"/>
+<ref refid="060512d6-603d-11ef-b109-0dc5f713f0e8"/>
+<ref refid="0851dce3-603d-11ef-adc4-0dc5f713f0e8"/>
+<ref refid="09fd20c6-603d-11ef-9b23-0dc5f713f0e8"/>
+<ref refid="28d886ce-603d-11ef-9c10-0dc5f713f0e8"/>
+<ref refid="2b663e21-603d-11ef-b8ff-0dc5f713f0e8"/>
+</reflist>
+</ownedAttribute>
+<ownedOperation>
+<reflist>
+<ref refid="2eafa984-603d-11ef-b0a5-0dc5f713f0e8"/>
+<ref refid="3309d5d4-603d-11ef-816d-0dc5f713f0e8"/>
+<ref refid="3733a892-603d-11ef-9703-0dc5f713f0e8"/>
+</reflist>
+</ownedOperation>
+<package>
+<ref refid="58d6c2e8-66f8-11ec-b4c8-0456e5e540ed"/>
+</package>
+<presentation>
+<reflist>
+<ref refid="dea97307-603c-11ef-9468-0dc5f713f0e8"/>
+</reflist>
+</presentation>
+</Class>
+<ClassItem id="dea97307-603c-11ef-9468-0dc5f713f0e8">
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, 369.61198039426154, 206.36733782732924)</val>
+</matrix>
+<top-left>
+<val>(0.0, 0.0)</val>
+</top-left>
+<width>
+<val>244.11748956750944</val>
+</width>
+<height>
+<val>236.20737923516168</val>
+</height>
+<diagram>
+<ref refid="5b5e374a-6039-11ef-a1e6-0dc5f713f0e8"/>
+</diagram>
+<subject>
+<ref refid="dea8c436-603c-11ef-8154-0dc5f713f0e8"/>
+</subject>
+</ClassItem>
+<Property id="e3a1f040-603c-11ef-8d08-0dc5f713f0e8">
+<class_>
+<ref refid="dea8c436-603c-11ef-8154-0dc5f713f0e8"/>
+</class_>
+<name>
+<val>id_enemigo</val>
+</name>
+</Property>
+<Operation id="f33535e9-603c-11ef-8e8c-0dc5f713f0e8">
+<class_>
+<ref refid="62ef7f96-6039-11ef-9bbe-0dc5f713f0e8"/>
+</class_>
+<name>
+<val>moverse</val>
+</name>
+</Operation>
+<Property id="facc41f2-603c-11ef-9c28-0dc5f713f0e8">
+<class_>
+<ref refid="62ef7f96-6039-11ef-9bbe-0dc5f713f0e8"/>
+</class_>
+<name>
+<val>posición_x</val>
+</name>
+</Property>
+<Property id="fd9966d0-603c-11ef-b1b1-0dc5f713f0e8">
+<class_>
+<ref refid="62ef7f96-6039-11ef-9bbe-0dc5f713f0e8"/>
+</class_>
+<name>
+<val>posición_y</val>
+</name>
+</Property>
+<Property id="033535d5-603d-11ef-9b17-0dc5f713f0e8">
+<class_>
+<ref refid="dea8c436-603c-11ef-8154-0dc5f713f0e8"/>
+</class_>
+<name>
+<val>nombre</val>
+</name>
+</Property>
+<Property id="060512d6-603d-11ef-b109-0dc5f713f0e8">
+<class_>
+<ref refid="dea8c436-603c-11ef-8154-0dc5f713f0e8"/>
+</class_>
+<name>
+<val>especie</val>
+</name>
+</Property>
+<Property id="0851dce3-603d-11ef-adc4-0dc5f713f0e8">
+<class_>
+<ref refid="dea8c436-603c-11ef-8154-0dc5f713f0e8"/>
+</class_>
+<name>
+<val>salud</val>
+</name>
+</Property>
+<Property id="09fd20c6-603d-11ef-9b23-0dc5f713f0e8">
+<class_>
+<ref refid="dea8c436-603c-11ef-8154-0dc5f713f0e8"/>
+</class_>
+<name>
+<val>daño</val>
+</name>
+</Property>
+<Property id="28d886ce-603d-11ef-9c10-0dc5f713f0e8">
+<class_>
+<ref refid="dea8c436-603c-11ef-8154-0dc5f713f0e8"/>
+</class_>
+<name>
+<val>posición_x</val>
+</name>
+</Property>
+<Property id="2b663e21-603d-11ef-b8ff-0dc5f713f0e8">
+<class_>
+<ref refid="dea8c436-603c-11ef-8154-0dc5f713f0e8"/>
+</class_>
+<name>
+<val>posición_y</val>
+</name>
+</Property>
+<Operation id="2eafa984-603d-11ef-b0a5-0dc5f713f0e8">
+<class_>
+<ref refid="dea8c436-603c-11ef-8154-0dc5f713f0e8"/>
+</class_>
+<isAbstract>
+<val>0</val>
+</isAbstract>
+<name>
+<val>moverse</val>
+</name>
+</Operation>
+<Operation id="3309d5d4-603d-11ef-816d-0dc5f713f0e8">
+<class_>
+<ref refid="dea8c436-603c-11ef-8154-0dc5f713f0e8"/>
+</class_>
+<name>
+<val>recoger_arma</val>
+</name>
+</Operation>
+<Operation id="3733a892-603d-11ef-9703-0dc5f713f0e8">
+<class_>
+<ref refid="dea8c436-603c-11ef-8154-0dc5f713f0e8"/>
+</class_>
+<name>
+<val>soltar_arma</val>
+</name>
+</Operation>
+<Operation id="3ba70dff-603d-11ef-8b91-0dc5f713f0e8">
+<class_>
+<ref refid="62ef7f96-6039-11ef-9bbe-0dc5f713f0e8"/>
+</class_>
+<name>
+<val>morir</val>
+</name>
+</Operation>
+<Property id="3e1d138d-603d-11ef-a0b1-0dc5f713f0e8">
+<class_>
+<ref refid="62ef7f96-6039-11ef-9bbe-0dc5f713f0e8"/>
+</class_>
+<name>
+<val>morir</val>
 </name>
 </Property>
 </gaphor>
