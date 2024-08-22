@@ -27,6 +27,16 @@ controlflow {
 <note>
 <val>Modelo de clases para tarea solicitada en clase.</val>
 </note>
+<ownedDiagram>
+<reflist>
+<ref refid="5b5e374a-6039-11ef-a1e6-0dc5f713f0e8"/>
+</reflist>
+</ownedDiagram>
+<ownedType>
+<reflist>
+<ref refid="62ef7f96-6039-11ef-9bbe-0dc5f713f0e8"/>
+</reflist>
+</ownedType>
 </Package>
 <Package id="a021290e-71b1-11ec-a409-f47b099bf663">
 <name>
@@ -421,4 +431,151 @@ existing classes or even new classes with specific responsibilities.</val>
 <ref refid="6203b92e-71b7-11ec-a409-f47b099bf663"/>
 </subject>
 </CommentItem>
+<Diagram id="5b5e374a-6039-11ef-a1e6-0dc5f713f0e8">
+<diagramType>
+<val>cls</val>
+</diagramType>
+<element>
+<ref refid="58d6c2e8-66f8-11ec-b4c8-0456e5e540ed"/>
+</element>
+<name>
+<val>Videojuego Programación II</val>
+</name>
+<ownedPresentation>
+<reflist>
+<ref refid="62f075ff-6039-11ef-a66d-0dc5f713f0e8"/>
+</reflist>
+</ownedPresentation>
+</Diagram>
+<Class id="62ef7f96-6039-11ef-9bbe-0dc5f713f0e8">
+<name>
+<val>Personaje</val>
+</name>
+<ownedAttribute>
+<reflist>
+<ref refid="6b75e359-6039-11ef-9c59-0dc5f713f0e8"/>
+<ref refid="6e67c8f2-6039-11ef-ad20-0dc5f713f0e8"/>
+<ref refid="75964a95-6039-11ef-9e2f-0dc5f713f0e8"/>
+<ref refid="7868750e-6039-11ef-9b2b-0dc5f713f0e8"/>
+<ref refid="7a09cbe9-6039-11ef-b907-0dc5f713f0e8"/>
+<ref refid="7c0d1b18-6039-11ef-b62f-0dc5f713f0e8"/>
+<ref refid="8f114c47-6039-11ef-a58e-0dc5f713f0e8"/>
+</reflist>
+</ownedAttribute>
+<ownedOperation>
+<reflist>
+<ref refid="82f26f92-6039-11ef-a7fe-0dc5f713f0e8"/>
+<ref refid="87e02e63-6039-11ef-9d29-0dc5f713f0e8"/>
+<ref refid="8cae7764-6039-11ef-8b46-0dc5f713f0e8"/>
+</reflist>
+</ownedOperation>
+<package>
+<ref refid="58d6c2e8-66f8-11ec-b4c8-0456e5e540ed"/>
+</package>
+<presentation>
+<reflist>
+<ref refid="62f075ff-6039-11ef-a66d-0dc5f713f0e8"/>
+</reflist>
+</presentation>
+</Class>
+<ClassItem id="62f075ff-6039-11ef-a66d-0dc5f713f0e8">
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, 356.5972651728877, 265.47031995985236)</val>
+</matrix>
+<top-left>
+<val>(-127.71326394416243, 0.0)</val>
+</top-left>
+<width>
+<val>282.71326394416246</val>
+</width>
+<height>
+<val>227.0</val>
+</height>
+<diagram>
+<ref refid="5b5e374a-6039-11ef-a1e6-0dc5f713f0e8"/>
+</diagram>
+<subject>
+<ref refid="62ef7f96-6039-11ef-9bbe-0dc5f713f0e8"/>
+</subject>
+</ClassItem>
+<Property id="6b75e359-6039-11ef-9c59-0dc5f713f0e8">
+<class_>
+<ref refid="62ef7f96-6039-11ef-9bbe-0dc5f713f0e8"/>
+</class_>
+<name>
+<val>id</val>
+</name>
+</Property>
+<Property id="6e67c8f2-6039-11ef-ad20-0dc5f713f0e8">
+<class_>
+<ref refid="62ef7f96-6039-11ef-9bbe-0dc5f713f0e8"/>
+</class_>
+<name>
+<val>nombre</val>
+</name>
+</Property>
+<Property id="75964a95-6039-11ef-9e2f-0dc5f713f0e8">
+<class_>
+<ref refid="62ef7f96-6039-11ef-9bbe-0dc5f713f0e8"/>
+</class_>
+<name>
+<val>especie</val>
+</name>
+</Property>
+<Property id="7868750e-6039-11ef-9b2b-0dc5f713f0e8">
+<class_>
+<ref refid="62ef7f96-6039-11ef-9bbe-0dc5f713f0e8"/>
+</class_>
+<name>
+<val>salud</val>
+</name>
+</Property>
+<Property id="7a09cbe9-6039-11ef-b907-0dc5f713f0e8">
+<class_>
+<ref refid="62ef7f96-6039-11ef-9bbe-0dc5f713f0e8"/>
+</class_>
+<name>
+<val>daño</val>
+</name>
+</Property>
+<Property id="7c0d1b18-6039-11ef-b62f-0dc5f713f0e8">
+<class_>
+<ref refid="62ef7f96-6039-11ef-9bbe-0dc5f713f0e8"/>
+</class_>
+<name>
+<val>hambre</val>
+</name>
+</Property>
+<Operation id="82f26f92-6039-11ef-a7fe-0dc5f713f0e8">
+<class_>
+<ref refid="62ef7f96-6039-11ef-9bbe-0dc5f713f0e8"/>
+</class_>
+<name>
+<val>recoger_arma</val>
+</name>
+</Operation>
+<Operation id="87e02e63-6039-11ef-9d29-0dc5f713f0e8">
+<class_>
+<ref refid="62ef7f96-6039-11ef-9bbe-0dc5f713f0e8"/>
+</class_>
+<name>
+<val>soltar_arma</val>
+</name>
+</Operation>
+<Operation id="8cae7764-6039-11ef-8b46-0dc5f713f0e8">
+<class_>
+<ref refid="62ef7f96-6039-11ef-9bbe-0dc5f713f0e8"/>
+</class_>
+<name>
+<val>comer</val>
+</name>
+</Operation>
+<Property id="8f114c47-6039-11ef-a58e-0dc5f713f0e8">
+<class_>
+<ref refid="62ef7f96-6039-11ef-9bbe-0dc5f713f0e8"/>
+</class_>
+<name>
+<val>artículos_portados</val>
+</name>
+</Property>
 </gaphor>
