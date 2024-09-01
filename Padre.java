@@ -15,7 +15,7 @@ public class Padre{
         x = 0;
     }
 
-    public Padre(String nombre, int a, int b, float x) {
+    public Padre(String nombre, int a, int b,float x) {
         this.nombre = nombre;
         this.a = a;
         this.b = b;
