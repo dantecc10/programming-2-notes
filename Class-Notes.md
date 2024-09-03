@@ -207,6 +207,42 @@ Tipos de elementos: En su mayoría; son las partes estáticas del modelo y repre
 
 - Estructurales:
 
+# Java
+
+La tecnología Java se creó como una herramienta de programación para ser usada en un proyecto de set-top-box en una pequeña operación denominada "the Green Project" en Sun Microsystems en el año 1991.
+
+EL lenguaje se denominó inicialmente Oak (por un roble que había fuea de la oficina de Gosling), luego pasó a denominarse Green cuando se descubrió que Oak ya estaba registrada, y finalmente se denominó Java.
+
+Todo programa en Java debe tener la siguiente extensión: `file.java // En UNIX, Windows, Linux.`
+
+Java es un lenguaje simple, orientado a objetos, interpretado, robusto, neutra, de arquitectura portable, de alto desempeño y dinámico. Es un lenguaje de programación orientado a objetos. Como los programas de Java se compilan en un formato de bytecode (código de bytes) una aplicación de Java se puede ejecutar en cualquier sistema, siempre y cuando dicho sistema instrumente la máquina virtual de Java.
+
+El compilador no compila para la plataforma de origen, sino para una plataforma abstracta llamada máquina virtual de Java, o JVM (Java Visrtual Machine).
+
+### Características:
+
+1. Lenguaje distribuido.
+2. Robusto y confiable.
+3. Carencia de apuntadores.
+4. Seguro.
+5. De hilos múltiples.
+
+## Simplicidad
+
+Java no poseee aritmética de punteros. No se necesita hacer delete y no hay eherencia múltiple.
+
+## Independiente de Plataforma
+
+Es la capacidad del programa de trasladarse con facilidad de un sistema a otro. Los datos primitivos de Java tiene tamaño consistente, independientemente de la plataforma en la que sean compilados.
+
+## Comentarios en Java.
+
+Se usa la doble diagonal `//` para comentarios breves, o /**/ para comentarios largos y multilínea.
+
+## Programa principal Java
+
+Todas las aplicaciones deben tener un `main`. `public static void main(String args[])`, es la forma de definir. Toda declaración termina con `;`. La sintaxis es muy parecida a la del lenguaje C. Las llaves `{}` denotan el cuerpo del programa.
+
 # Evaluación
 
 - Exámenes (Departamental) ECAA'S: 35%
