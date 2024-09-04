@@ -1,4 +1,4 @@
-public class Padre {
+public class Padre{
     protected String nombre;
     protected int a, b;
     private float x;
