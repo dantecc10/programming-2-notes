@@ -12,5 +12,6 @@ public class AplicaComplejo {
         c1.setR(a);
         c1.setI(b);
         c1.muestra();
+        en.close();
     }
 }

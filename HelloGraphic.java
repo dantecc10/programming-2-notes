@@ -10,4 +10,4 @@ public class HelloGraphic {
         int c = a + b;
         JOptionPane.showMessageDialog(null, "La suma es: " + c, "Resultado", JOptionPane.INFORMATION_MESSAGE);
     }
-a
+}
