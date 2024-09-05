@@ -24,6 +24,7 @@ public class Operaciones {
         } else {
             System.out.println("No se puede dividir entre cero");
         }
-        sc.close();        
+        sc.close();
+                
     }
 }
