@@ -17,8 +17,8 @@ public class Calculadora {
         
         float c = (float) num1/num2;
         System.out.println("Division: "+c);
-        
-        sc.close();
+
+        ent.close();
 
     }
 }
