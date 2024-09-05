@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Operaciones {
+public class Calculadora {
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
 
@@ -25,6 +25,6 @@ public class Operaciones {
             System.out.println("No se puede dividir entre cero");
         }
         sc.close();
-                
+
     }
 }
