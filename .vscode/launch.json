@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "AplicaComplejo",
+            "request": "launch",
+            "mainClass": "AplicaComplejo",
+            "projectName": "programming-2-notes_5b64bf76"
+        },
+        {
+            "type": "java",
             "name": "HelloGraphic",
             "request": "launch",
             "mainClass": "HelloGraphic",
