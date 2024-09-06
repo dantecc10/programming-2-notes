@@ -4,10 +4,10 @@ public class Divisible {
     public static void main(String[] args) {
         Scanner ent=new Scanner(System.in);
 
-    System.out.println("Dame el primer número: ");
+    System.out.print("Dame el primer número: ");
     int num1 = ent.nextInt();
 
-    System.out.println("Dame el segundo número: ");
+    System.out.print("Dame el segundo número: ");
     int num2 = ent.nextInt();
 
     if (num1%num2 == 0) {
