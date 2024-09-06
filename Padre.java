@@ -3,7 +3,7 @@ public class Padre {
     protected int a, b;
     private float x;
 
-    public Padre() {
+    public Padre () {
         nombre = "";
         a = b = 0;
         x = 0;
