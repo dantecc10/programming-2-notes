@@ -7,7 +7,6 @@ public class Padre {
         nombre = "";
         a = b = 0;
         x = 0;
-
     }
 
     public Padre(String nom) {
