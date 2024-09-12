@@ -57,4 +57,26 @@ public class Arreglo {
 		for (int i = 0; i < n; i++)
 			System.out.println(c + "[" + i + "] = " + A[i]);
 	}
+
+	public void sumar(int B[]) {
+		for (int i = 0; i < n; i++) {
+			int temp = A[i] + B[i];
+			System.out.print("A [" + i + "] + B [" + i + "] = " + temp + "\n");
+		}
+	}
+
+	public void restar(int B[]) {
+		for (int i = 0; i < n; i++) {
+			int temp = A[i] - B[i];
+			System.out.print("A [" + i + "] - B [" + i + "] = " + temp + "\n");
+		}
+	}
+
+	public int productoPunto(int B[]) {
+		int point_product = 0;
+		for (int i = 0; i < n; i++) {
+			point_product += A[i] * B[i];
+		}
+		return point_product;
+	}
 }
