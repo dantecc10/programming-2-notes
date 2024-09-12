@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CalFrac",
+            "request": "launch",
+            "mainClass": "Fracciones.CalFrac",
+            "projectName": "programming-2-notes_5eacf0cc"
+        },
+        {
+            "type": "java",
             "name": "Divisible",
             "request": "launch",
             "mainClass": "Divisible",

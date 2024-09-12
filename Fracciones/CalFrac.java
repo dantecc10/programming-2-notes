@@ -7,28 +7,30 @@ public class CalFrac {
 
         Scanner entry = new Scanner(System.in);
 
-        System.out.println("PRIMERA FRACCION");
-
-        System.out.println("Dame el numerador: ");
+        System.out.println("PRIMERA FRACCION: ");
         int num = entry.nextInt();
 
-        System.out.println("Dame el denomidaor: ");
+        System.out.println("-");
         int den = entry.nextInt();
 
         Fraccion c1 = new Fraccion(num, den);
 
+        System.out.println("\nSEGUNDA FRACCION: ");
+        num = entry.nextInt();
 
-        System.out.println("SEGUNDA FRACCION");
+        System.out.println("-");
+        den = entry.nextInt();
 
-        ystem.out.println("Dame el numerador: ");
-        int num = entry.nextInt();
-
-        System.out.println("Dame el denomidaor: ");
-        int den = entry.nextInt();
-
-        System.out.println("\nResultados: ");
-        System.out.println("Suma: "+(num1+num2));
-        System.out.println("Resta: "+(num1-num2));
-        System.out.println("Multiplicación: "+(num1*num2));
+        Fraccion c2 = new Fraccion(num, den);
+        Fraccion c3 = new Fraccion();
+        System.out.println("\nRESULTADOS: ");
+        c3.suma(c1, c2);
+        System.out.println("Suma: " + c3);
+        c3.resta(c1, c2);
+        System.out.println("Resta: " + c3);
+        c3.multiplica(c1, c2);
+        System.out.println("Multi: " + c3);
+        c3.divide(c1, c2);
+        System.out.println("Divide: " + c3);
     }
 }

@@ -41,6 +41,8 @@ public class Fraccion {
     }
 
     public String toString() {
-        return (n + "." + d);
+        if (d == 0)
+            return ("Indefinido");
+        return (n + " / " + d);
     }
 }
