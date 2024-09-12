@@ -10,13 +10,17 @@ public class Calculadora {
         System.out.print("Ingrese el segundo número: ");
         int num2 = ent.nextInt();
 
-        System.out.println("Resultados: ");
+        System.out.println("\nResultados: ");
         System.out.println("Suma: "+(num1+num2));
         System.out.println("Resta: "+(num1-num2));
         System.out.println("Multiplicación: "+(num1*num2));
         
-        float c = (float) num1/num2;
-        System.out.println("Division: "+c);
+        if (num2 == 0)
+            System.out.println("Division: indefinido");
+        else {
+            float c = (float) num1/num2;
+            System.out.println("Division: "+c);
+        }
 
         ent.close();
 

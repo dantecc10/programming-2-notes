@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Calculadora",
+            "request": "launch",
+            "mainClass": "Calculadora",
+            "projectName": "programming-2-notes_5eacf0cc"
+        },
+        {
+            "type": "java",
+            "name": "Calculadora",
+            "request": "launch",
+            "mainClass": "CalculadoraComplejos.Calculadora",
+            "projectName": "programming-2-notes_5eacf0cc"
+        },
+        {
+            "type": "java",
             "name": "Divisible",
             "request": "launch",
             "mainClass": "Divisible",
