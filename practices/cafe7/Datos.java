@@ -1,4 +1,4 @@
-package Cafe;
+package practices.cafe7;
 
 public class Datos {
 

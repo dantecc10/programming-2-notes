@@ -1,4 +1,4 @@
-package Fracciones;
+package practices.fracciones8;
 
 import java.util.Scanner;
 
@@ -32,5 +32,7 @@ public class CalFrac {
         System.out.println("Multi: " + c3);
         c3.divide(c1, c2);
         System.out.println("Divide: " + c3);
+
+        entry.close();
     }
 }

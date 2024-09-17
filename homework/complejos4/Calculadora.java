@@ -1,4 +1,4 @@
-package CalculadoraComplejos;
+package homework.complejos4;
 
 import java.util.Scanner;
 

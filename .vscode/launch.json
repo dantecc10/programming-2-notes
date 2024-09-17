@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "AplicaArreglo",
+            "request": "launch",
+            "mainClass": "practices.arreglos6.AplicaArreglo",
+            "projectName": "programming-2-notes_5eacf0cc"
+        },
+        {
+            "type": "java",
+            "name": "AplicaArreglo",
+            "request": "launch",
+            "mainClass": "AplicaArreglo",
+            "projectName": "programming-2-notes_5eacf0cc"
+        },
+        {
+            "type": "java",
             "name": "CafeInternet",
             "request": "launch",
             "mainClass": "Cafe.CafeInternet",

@@ -1,5 +1,5 @@
 // Lee 2 complejos, luego ejecuta las 4 operaciones basicas con ellos
-package CalculadoraComplejos;
+package homework.complejos4;
 
 public class Complejo {
 

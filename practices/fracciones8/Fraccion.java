@@ -1,4 +1,4 @@
-package Fracciones;
+package practices.fracciones8;
 
 public class Fraccion {
     int n, d;

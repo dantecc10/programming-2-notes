@@ -1,4 +1,4 @@
-package practices.arreglo;
+package practices.arreglos6;
 
 import java.util.Scanner;
 
