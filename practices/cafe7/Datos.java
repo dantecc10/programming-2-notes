@@ -20,8 +20,6 @@ public class Datos {
         this.minutoEntrada = minutoEntrada;
         this.horaSalida = horaEntrada;
         this.minutoSalida = minutoEntrada;
-        horaIncremento = 0;
-        minutoIncremento = 0;
         pagoTotal = 0.0;
     }
     
@@ -60,11 +58,6 @@ public class Datos {
         return String.format("%02d:%02d", horaSalida, minutoSalida);
     }
     
-    public void setTiempoIncremento(int hora, int minuto) {
-        horaIncremento = hora;
-        minutoIncremento = minuto;
-    }
-    
     public String getTiempoIncremento() {
         return String.format("%02d:%02d", horaIncremento, minutoIncremento);
     }
@@ -75,8 +68,13 @@ public class Datos {
     
     // Método para calcular el pago
     public void calculaPago() {
-        int minutosUsados = (horaSalida * 60 + minutoSalida) - (horaEntrada * 60 + minutoEntrada);
-        pagoTotal = (minutosUsados / 60.0) * 11.50;
+        int llegada = (horaEntrada * 60 + minutoEntrada);
+        int salida = (horaSalida * 60 + minutoSalida);
+        if (salida > llegada) {
+            int minutosUsados = salida - llegada;
+            pagoTotal = (minutosUsados / 60.0) * 11.50;
+        } else
+            System.out.print("E R R O R !");
     }
     
     // Método para incrementar el tiempo
