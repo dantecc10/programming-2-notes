@@ -20,9 +20,9 @@ public class Datos {
         this.minutoEntrada = minutoEntrada;
         this.horaSalida = horaEntrada;
         this.minutoSalida = minutoEntrada;
-        this.horaIncremento = 0;
-        this.minutoIncremento = 0;
-        this.pagoTotal = 0.0;
+        horaIncremento = 0;
+        minutoIncremento = 0;
+        pagoTotal = 0.0;
     }
     
     // Métodos para modificar y mostrar datos
@@ -43,8 +43,8 @@ public class Datos {
     }
     
     public void setHoraEntrada(int hora, int minuto) {
-        this.horaEntrada = hora;
-        this.minutoEntrada = minuto;
+        horaEntrada = hora;
+        minutoEntrada = minuto;
     }
     
     public String getHoraEntrada() {
@@ -52,8 +52,8 @@ public class Datos {
     }
     
     public void setHoraSalida(int hora, int minuto) {
-        this.horaSalida = hora;
-        this.minutoSalida = minuto;
+        horaSalida = hora;
+        minutoSalida = minuto;
     }
     
     public String getHoraSalida() {
@@ -61,8 +61,8 @@ public class Datos {
     }
     
     public void setTiempoIncremento(int hora, int minuto) {
-        this.horaIncremento = hora;
-        this.minutoIncremento = minuto;
+        horaIncremento = hora;
+        minutoIncremento = minuto;
     }
     
     public String getTiempoIncremento() {
