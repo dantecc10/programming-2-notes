@@ -20,9 +20,14 @@ public class CafeInternet {
 
         System.out.println("Agregar minutos: ");
         int inc = entry.nextInt();
-        pc.incrementaTiempo(inc, 0);
+        pc.incrementaTiempo(inc, 1);
+
+        System.out.print("He: "+pc.getHoraEntrada()+" Hs: "+pc.getHoraSalida());
+
         pc.calculaPago();
 
         System.out.println("Precio final: " + pc.getPagoTotal());
+
+        entry.close();
     }
 }

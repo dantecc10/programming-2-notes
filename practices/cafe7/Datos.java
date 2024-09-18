@@ -78,7 +78,7 @@ public class Datos {
     }
     
     // Método para incrementar el tiempo
-    public void incrementaTiempo(int minutoIncremeto, int horaIncremento) {
+    public void incrementaTiempo(int minutoIncremento, int horaIncremento) {
         minutoSalida += minutoIncremento;
         horaSalida += horaIncremento;
         
