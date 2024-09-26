@@ -40,8 +40,8 @@ public class Complejo {
     }
 
     public void divide(Complejo c1, Complejo c2) {
-        r = (c1.i * c2.r - c1.r * c2.i)/(c2.r*c2.r + c2.i*c2.i);
-        i = (c1.r * c2.r + c1.i * c2.i)/(c2.r*c2.r + c2.i*c2.i);
+        r = (c1.r * c2.r + c1.i * c2.i)/(c2.r*c2.r + c2.i*c2.i);
+        i = (c1.i * c2.r - c1.r * c2.i)/(c2.r*c2.r + c2.i*c2.i);
     }
 
     // Sobreescribimos "toString"
