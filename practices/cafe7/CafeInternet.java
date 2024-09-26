@@ -18,9 +18,9 @@ public class CafeInternet {
 
         Datos pc = new Datos(name, num, hour, min);
 
-        System.out.println("Agregar minutos: ");
+        System.out.print("Agregar minutos: ");
         int inc = entry.nextInt();
-        pc.incrementaTiempo(inc, 1);
+        pc.incrementaTiempo(inc, 0);
 
         System.out.print("He: "+pc.getHoraEntrada()+" Hs: "+pc.getHoraSalida());
 
