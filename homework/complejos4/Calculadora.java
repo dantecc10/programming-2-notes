@@ -9,7 +9,7 @@ public class Calculadora {
         Complejo c3 = new Complejo();
         Scanner entry = new Scanner(System.in);
 
-        System.out.print("Primer complejo:\nr = ");
+        System.out.print("\nPrimer complejo:\nr = ");
         a = entry.nextFloat();
         System.out.print("i = ");
         b = entry.nextFloat();
@@ -31,7 +31,10 @@ public class Calculadora {
         c3.multiplica(c1, c2);
         System.out.println("*: " + c3);
         c3.divide(c1, c2);
-        System.out.println("/: " + c3);
+        if ((c2.r*c2.r + c2.i*c2.i) != 0)
+            System.out.println("/: " + c3);
+        else
+            System.out.println("/: Indefinido");
 
         entry.close();
     }

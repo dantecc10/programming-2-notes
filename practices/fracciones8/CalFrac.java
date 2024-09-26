@@ -5,23 +5,29 @@ import java.util.Scanner;
 public class CalFrac {
     public static void main(String args[]) {
 
+        int num, den;
         Scanner entry = new Scanner(System.in);
 
-        System.out.println("PRIMERA FRACCION: ");
-        int num = entry.nextInt();
-
-        System.out.println("-");
-        int den = entry.nextInt();
-
+        do {
+            System.out.println("\nPRIMERA FRACCION: ");
+            num = entry.nextInt();
+            System.out.println("-");
+            den = entry.nextInt();
+            if (den == 0)
+                System.out.println("ERROR: Ingrese un denominador valido");
+        } while (den == 0);
         Fraccion c1 = new Fraccion(num, den);
 
-        System.out.println("\nSEGUNDA FRACCION: ");
-        num = entry.nextInt();
-
-        System.out.println("-");
-        den = entry.nextInt();
-
+        do {
+            System.out.println("\nSEGUNDA FRACCION: ");
+            num = entry.nextInt();
+            System.out.println("-");
+            den = entry.nextInt();
+            if (den == 0)
+                System.out.println("ERROR: Ingrese un denominador valido");
+        } while (den == 0);
         Fraccion c2 = new Fraccion(num, den);
+
         Fraccion c3 = new Fraccion();
         System.out.println("\nRESULTADOS: ");
         c3.suma(c1, c2);

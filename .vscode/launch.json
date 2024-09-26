@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CalFrac",
+            "request": "launch",
+            "mainClass": "practices.fracciones8.CalFrac",
+            "projectName": "programming-2-notes"
+        },
+        {
+            "type": "java",
+            "name": "Calculadora",
+            "request": "launch",
+            "mainClass": "homework.complejos4.Calculadora",
+            "projectName": "programming-2-notes"
+        },
+        {
+            "type": "java",
             "name": "CafeInternet",
             "request": "launch",
             "mainClass": "practices.cafe7.CafeInternet",
