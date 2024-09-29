@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "FigGeometrica",
+            "request": "launch",
+            "mainClass": "practices.FigGeometrica.FigGeometrica",
+            "projectName": "programming-2-notes"
+        },
+        {
+            "type": "java",
+            "name": "FigGeometrica",
+            "request": "launch",
+            "mainClass": "FigGeometrica",
+            "projectName": "programming-2-notes"
+        },
+        {
+            "type": "java",
+            "name": "AplicaArreglo",
+            "request": "launch",
+            "mainClass": "practices.arreglos6.AplicaArreglo",
+            "projectName": "programming-2-notes"
+        },
+        {
+            "type": "java",
+            "name": "Execute",
+            "request": "launch",
+            "mainClass": "Execute",
+            "projectName": "programming-2-notes"
+        },
+        {
+            "type": "java",
             "name": "CalFrac",
             "request": "launch",
             "mainClass": "practices.fracciones8.CalFrac",
