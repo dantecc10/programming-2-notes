@@ -1,42 +1,58 @@
 package practices.Conjuntos;
 
+import java.util.Scanner;
+
 public class Conjunto {
     
     protected String items[];
-    private int use = 0;
+    protected int id = 0;
 
     // -----| Constructors |-----
-    public Conjunto() {
-        items = new String[0];
-    }
-
     public Conjunto(int n) {
-        items = new String[n];
+        if (n > 0)
+            items = new String[n];
+        else
+            items = new String[0];
     }
-    
+
     // -----| Methods |-----
-    public void add(String obj) {
-        items = new String[3];
-        items[use] = obj;
-        use++;
+    public void fill() {
+        Scanner input = new Scanner(System.in);
+
+        for (int i = 0; i < items.length; i++) { // LLena el arreglo
+            System.out.print(" ["+(i+1)+"]: ");
+            items[i] = input.nextLine();
+        }
+        input.close();
     }
 
-    public static Conjunto union(Conjunto c1, Conjunto c2) {
-        int size = c1.items.length + c2.items.length;
-        int index = 0;
-        Conjunto union = new Conjunto(size);
+    public void print() {
+        for (int i = 0; i < items.length; i++)
+            System.out.println(items[i]);
+    }
 
-        for (int i = 0; i < c1.items.length; i++) {
-            union.items[index] = c1.items[i];
-            index++;
-        }
+    public void add(String obj) {
 
-        for (int i = 0; i < c2.items.length; i++) {
-            union.items[index] = c2.items[i];
-            index++;
-        }
-        union.use = index - 1;
+        String other[] = new String[items.length + 1]; // Genera un arreglo con +1 indices
 
-        return union;
+        for (int i = 0; i < items.length; i++) // Copia todos los valores al nuevo arreglo
+            other[i] = items[i];
+
+        other[other.length - 1] = obj; // Agrega el item deseado
+
+        items = other; // Sustituimos el anterior conjunto por el nuevo
+    }
+
+    public static Conjunto create(int num) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.println(" Conjunto " + num);
+        System.out.print(" Tamaño: ");
+        Conjunto set = new Conjunto(input.nextInt());
+        set.fill();
+
+        input.close();
+
+        return set;
     }
 }
