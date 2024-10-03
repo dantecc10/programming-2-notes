@@ -98,10 +98,10 @@ class Paciente extends Persona {
     // Método para verificar si el doctor asignado existe
     public boolean verificarDoctorAsignado() {
         if (this.doctorAsignado != null) {
-            System.out.println("El paciente está atendido por el doctor: " + doctorAsignado.nombre);
+            System.out.println("Paciente: " + nombre + " es atendido por: " + doctorAsignado.nombre);
             return true;
         } else {
-            System.out.println("El paciente no tiene un doctor asignado.");
+            System.out.println("Paciente: " + nombre + " no tiene doctor asignado.");
             return false;
         }
     }
@@ -116,8 +116,14 @@ public class ClinicaDental {
         // Creación del paciente con un doctor asignado
         Paciente paciente1 = new Paciente("Oswaldo Huertero", "123 Oriente", "2221887054", 101, "17/06/2024", "Caries", 25, 65.5, 1.65, "120/80", "Tratamiento de ortodoncia", "Eliminación de Caries", dentista1);
 
+        // Creación del paciente sin doctor asignado
+        Paciente paciente2 = new Paciente("Juan Pérez", "Calle Ejemplo 789", "555-6789", 102, "15/10/2024", "Dolor de muelas", 30, 70.0, 1.75, "130/85", "Análisis", "Ninguno", null);
+
         // Mostrar información del paciente y verificar doctor asignado
         paciente1.mostrarInformacion();
         paciente1.verificarDoctorAsignado();
+
+        // Verificar que el paciente no tiene doctor asignado
+        paciente2.verificarDoctorAsignado();
     }
 }

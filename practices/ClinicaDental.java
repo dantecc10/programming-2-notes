@@ -90,5 +90,12 @@ public class ClinicaDental {
 
         // Verificar que el paciente está atendido por un doctor
         paciente1.verificarDoctorAsignado();
+
+        // Creación del paciente sin doctor asignado
+        Paciente paciente2 = new Paciente("Juan Pérez", "Calle Ejemplo 789", "555-6789", 102, "15/10/2024", "Dolor de muelas", 30, 70.0, 1.75, "130/85", "Análisis", "Ninguno", null);
+
+        // Verificar que el paciente no tiene doctor asignado
+        paciente2.verificarDoctorAsignado();
+
     }
 }
