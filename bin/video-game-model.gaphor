@@ -1,0 +1,970 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gaphor xmlns="http://gaphor.sourceforge.net/model" version="3.0" gaphor-version="2.26.0">
+<StyleSheet id="58d6989a-66f8-11ec-b4c8-0456e5e540ed">
+<styleSheet>
+<val>diagram {
+ /* line-style: sloppy 0.3; */
+}
+
+controlflow {
+  dash-style: 0;
+}
+</val>
+</styleSheet>
+</StyleSheet>
+<Package id="58d6c2e8-66f8-11ec-b4c8-0456e5e540ed">
+<name>
+<val>Videojuego Programación II</val>
+</name>
+<nestedPackage>
+<reflist>
+<ref refid="a021290e-71b1-11ec-a409-f47b099bf663"/>
+<ref refid="c254a76c-71b1-11ec-a409-f47b099bf663"/>
+<ref refid="cccf183a-71b1-11ec-a409-f47b099bf663"/>
+<ref refid="f3a82730-71b1-11ec-a409-f47b099bf663"/>
+</reflist>
+</nestedPackage>
+<note>
+<val>Modelo de clases para tarea solicitada en clase.</val>
+</note>
+<ownedDiagram>
+<reflist>
+<ref refid="5b5e374a-6039-11ef-a1e6-0dc5f713f0e8"/>
+</reflist>
+</ownedDiagram>
+<ownedType>
+<reflist>
+<ref refid="62ef7f96-6039-11ef-9bbe-0dc5f713f0e8"/>
+<ref refid="dea8c436-603c-11ef-8154-0dc5f713f0e8"/>
+<ref refid="1dd627bb-609f-11ef-a652-2b73aa027338"/>
+<ref refid="58909d89-609f-11ef-a77c-2b73aa027338"/>
+</reflist>
+</ownedType>
+</Package>
+<Package id="a021290e-71b1-11ec-a409-f47b099bf663">
+<name>
+<val>1. Use Cases</val>
+</name>
+<ownedDiagram>
+<reflist>
+<ref refid="0c81912e-71b2-11ec-a409-f47b099bf663"/>
+<ref refid="3132c19a-71b3-11ec-a409-f47b099bf663"/>
+</reflist>
+</ownedDiagram>
+<package>
+<ref refid="58d6c2e8-66f8-11ec-b4c8-0456e5e540ed"/>
+</package>
+</Package>
+<Package id="c254a76c-71b1-11ec-a409-f47b099bf663">
+<name>
+<val>2. Domain Analysis</val>
+</name>
+<ownedDiagram>
+<reflist>
+<ref refid="06ecc092-71b4-11ec-a409-f47b099bf663"/>
+</reflist>
+</ownedDiagram>
+<package>
+<ref refid="58d6c2e8-66f8-11ec-b4c8-0456e5e540ed"/>
+</package>
+</Package>
+<Package id="cccf183a-71b1-11ec-a409-f47b099bf663">
+<name>
+<val>3. Architectural Design</val>
+</name>
+<ownedDiagram>
+<reflist>
+<ref refid="37edd9b4-71b5-11ec-a409-f47b099bf663"/>
+<ref refid="ad3969b8-71b5-11ec-a409-f47b099bf663"/>
+</reflist>
+</ownedDiagram>
+<ownedType>
+<reflist>
+<ref refid="b73251a0-71b5-11ec-a409-f47b099bf663"/>
+</reflist>
+</ownedType>
+<package>
+<ref refid="58d6c2e8-66f8-11ec-b4c8-0456e5e540ed"/>
+</package>
+</Package>
+<Package id="f3a82730-71b1-11ec-a409-f47b099bf663">
+<name>
+<val>4. Detailed Design</val>
+</name>
+<ownedDiagram>
+<reflist>
+<ref refid="585f224c-71b6-11ec-a409-f47b099bf663"/>
+<ref refid="0b5ba60e-71b7-11ec-a409-f47b099bf663"/>
+</reflist>
+</ownedDiagram>
+<package>
+<ref refid="58d6c2e8-66f8-11ec-b4c8-0456e5e540ed"/>
+</package>
+</Package>
+<Diagram id="0c81912e-71b2-11ec-a409-f47b099bf663">
+<diagramType>
+<val>uc</val>
+</diagramType>
+<element>
+<ref refid="a021290e-71b1-11ec-a409-f47b099bf663"/>
+</element>
+<name>
+<val>Use Cases</val>
+</name>
+<ownedPresentation>
+<reflist>
+<ref refid="fe29995e-71b2-11ec-a409-f47b099bf663"/>
+</reflist>
+</ownedPresentation>
+</Diagram>
+<Comment id="fe29884c-71b2-11ec-a409-f47b099bf663">
+<body>
+<val>Analyze functional requirements by
+identifying user roles – actors – and
+associating them to their use cases.</val>
+</body>
+<presentation>
+<reflist>
+<ref refid="fe29995e-71b2-11ec-a409-f47b099bf663"/>
+</reflist>
+</presentation>
+</Comment>
+<CommentItem id="fe29995e-71b2-11ec-a409-f47b099bf663">
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, 93.76953125, 79.1953125)</val>
+</matrix>
+<top-left>
+<val>(0.0, 0.0)</val>
+</top-left>
+<width>
+<val>258.0</val>
+</width>
+<height>
+<val>110.0</val>
+</height>
+<diagram>
+<ref refid="0c81912e-71b2-11ec-a409-f47b099bf663"/>
+</diagram>
+<subject>
+<ref refid="fe29884c-71b2-11ec-a409-f47b099bf663"/>
+</subject>
+</CommentItem>
+<Diagram id="3132c19a-71b3-11ec-a409-f47b099bf663">
+<diagramType>
+<val>act</val>
+</diagramType>
+<element>
+<ref refid="a021290e-71b1-11ec-a409-f47b099bf663"/>
+</element>
+<name>
+<val>Use Case Scenarios</val>
+</name>
+<ownedPresentation>
+<reflist>
+<ref refid="7ff4998e-71b3-11ec-a409-f47b099bf663"/>
+</reflist>
+</ownedPresentation>
+</Diagram>
+<Comment id="7ff48ef8-71b3-11ec-a409-f47b099bf663">
+<body>
+<val>Model abstract use case implementation by creating activity diagrams visualizing activity flows for primary and secondary use case scenarios.</val>
+</body>
+<presentation>
+<reflist>
+<ref refid="7ff4998e-71b3-11ec-a409-f47b099bf663"/>
+</reflist>
+</presentation>
+</Comment>
+<CommentItem id="7ff4998e-71b3-11ec-a409-f47b099bf663">
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, 58.0, 79.0)</val>
+</matrix>
+<top-left>
+<val>(0.0, 0.0)</val>
+</top-left>
+<width>
+<val>364.0</val>
+</width>
+<height>
+<val>95.0</val>
+</height>
+<diagram>
+<ref refid="3132c19a-71b3-11ec-a409-f47b099bf663"/>
+</diagram>
+<subject>
+<ref refid="7ff48ef8-71b3-11ec-a409-f47b099bf663"/>
+</subject>
+</CommentItem>
+<Diagram id="06ecc092-71b4-11ec-a409-f47b099bf663">
+<diagramType>
+<val>cls</val>
+</diagramType>
+<element>
+<ref refid="c254a76c-71b1-11ec-a409-f47b099bf663"/>
+</element>
+<name>
+<val>Domain Entities</val>
+</name>
+<ownedPresentation>
+<reflist>
+<ref refid="b2b559de-71b4-11ec-a409-f47b099bf663"/>
+</reflist>
+</ownedPresentation>
+</Diagram>
+<Comment id="b2b54e26-71b4-11ec-a409-f47b099bf663">
+<body>
+<val>Perform domain analysis by modeling domain entities and their relationships using simplified class diagram. This diagram will serve as a visual dictionary of concepts. It will also be a starting point for your design-level data model.</val>
+</body>
+<presentation>
+<reflist>
+<ref refid="b2b559de-71b4-11ec-a409-f47b099bf663"/>
+</reflist>
+</presentation>
+</Comment>
+<CommentItem id="b2b559de-71b4-11ec-a409-f47b099bf663">
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, 46.015625, 81.69921875)</val>
+</matrix>
+<top-left>
+<val>(0.0, 0.0)</val>
+</top-left>
+<width>
+<val>400.0</val>
+</width>
+<height>
+<val>100.0</val>
+</height>
+<diagram>
+<ref refid="06ecc092-71b4-11ec-a409-f47b099bf663"/>
+</diagram>
+<subject>
+<ref refid="b2b54e26-71b4-11ec-a409-f47b099bf663"/>
+</subject>
+</CommentItem>
+<Diagram id="37edd9b4-71b5-11ec-a409-f47b099bf663">
+<diagramType>
+<val>pkg</val>
+</diagramType>
+<element>
+<ref refid="cccf183a-71b1-11ec-a409-f47b099bf663"/>
+</element>
+<name>
+<val>Package Dependencies</val>
+</name>
+<ownedPresentation>
+<reflist>
+<ref refid="098cfa2c-71b6-11ec-a409-f47b099bf663"/>
+</reflist>
+</ownedPresentation>
+</Diagram>
+<Diagram id="ad3969b8-71b5-11ec-a409-f47b099bf663">
+<diagramType>
+<val>sd</val>
+</diagramType>
+<element>
+<ref refid="cccf183a-71b1-11ec-a409-f47b099bf663"/>
+</element>
+<name>
+<val>Interactions</val>
+</name>
+<ownedPresentation>
+<reflist>
+<ref refid="2d10bd3a-71b6-11ec-a409-f47b099bf663"/>
+</reflist>
+</ownedPresentation>
+</Diagram>
+<Interaction id="b73251a0-71b5-11ec-a409-f47b099bf663">
+<name>
+<val>Interaction</val>
+</name>
+<package>
+<ref refid="cccf183a-71b1-11ec-a409-f47b099bf663"/>
+</package>
+</Interaction>
+<Comment id="098cef6e-71b6-11ec-a409-f47b099bf663">
+<body>
+<val>Prepare package dependencies diagram to group your implementation classes in appropriate way. This will help you maintain the code well structured and avoid design flaws such as cyclic dependencies or dependencies on unstable parts</val>
+</body>
+<presentation>
+<reflist>
+<ref refid="098cfa2c-71b6-11ec-a409-f47b099bf663"/>
+</reflist>
+</presentation>
+</Comment>
+<CommentItem id="098cfa2c-71b6-11ec-a409-f47b099bf663">
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, 106.71484375, 51.49999999999997)</val>
+</matrix>
+<top-left>
+<val>(0.0, 0.0)</val>
+</top-left>
+<width>
+<val>271.5703125</val>
+</width>
+<height>
+<val>144.0</val>
+</height>
+<diagram>
+<ref refid="37edd9b4-71b5-11ec-a409-f47b099bf663"/>
+</diagram>
+<subject>
+<ref refid="098cef6e-71b6-11ec-a409-f47b099bf663"/>
+</subject>
+</CommentItem>
+<Comment id="2d10b29a-71b6-11ec-a409-f47b099bf663">
+<body>
+<val>Model component interactions for use case scenarios in order to find out new methods in
+existing classes or even new classes with specific responsibilities.</val>
+</body>
+<presentation>
+<reflist>
+<ref refid="2d10bd3a-71b6-11ec-a409-f47b099bf663"/>
+</reflist>
+</presentation>
+</Comment>
+<CommentItem id="2d10bd3a-71b6-11ec-a409-f47b099bf663">
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, 43.0, 73.0)</val>
+</matrix>
+<top-left>
+<val>(0.0, 0.0)</val>
+</top-left>
+<width>
+<val>322.0</val>
+</width>
+<height>
+<val>93.0</val>
+</height>
+<diagram>
+<ref refid="ad3969b8-71b5-11ec-a409-f47b099bf663"/>
+</diagram>
+<subject>
+<ref refid="2d10b29a-71b6-11ec-a409-f47b099bf663"/>
+</subject>
+</CommentItem>
+<Diagram id="585f224c-71b6-11ec-a409-f47b099bf663">
+<diagramType>
+<val>cls</val>
+</diagramType>
+<element>
+<ref refid="f3a82730-71b1-11ec-a409-f47b099bf663"/>
+</element>
+<name>
+<val>Detailed Class Design</val>
+</name>
+<ownedPresentation>
+<reflist>
+<ref refid="6e4703fe-71b6-11ec-a409-f47b099bf663"/>
+</reflist>
+</ownedPresentation>
+</Diagram>
+<Comment id="6e46f7ba-71b6-11ec-a409-f47b099bf663">
+<body>
+<val>Create detailed class diagrams to capture your object-oriented data model.</val>
+</body>
+<presentation>
+<reflist>
+<ref refid="6e4703fe-71b6-11ec-a409-f47b099bf663"/>
+</reflist>
+</presentation>
+</Comment>
+<CommentItem id="6e4703fe-71b6-11ec-a409-f47b099bf663">
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, 72.0, 76.5)</val>
+</matrix>
+<top-left>
+<val>(0.0, 0.0)</val>
+</top-left>
+<width>
+<val>215.0</val>
+</width>
+<height>
+<val>76.0</val>
+</height>
+<diagram>
+<ref refid="585f224c-71b6-11ec-a409-f47b099bf663"/>
+</diagram>
+<subject>
+<ref refid="6e46f7ba-71b6-11ec-a409-f47b099bf663"/>
+</subject>
+</CommentItem>
+<Diagram id="0b5ba60e-71b7-11ec-a409-f47b099bf663">
+<diagramType>
+<val>cmp</val>
+</diagramType>
+<element>
+<ref refid="f3a82730-71b1-11ec-a409-f47b099bf663"/>
+</element>
+<name>
+<val>Implementation Architecture</val>
+</name>
+<ownedPresentation>
+<reflist>
+<ref refid="6203ccac-71b7-11ec-a409-f47b099bf663"/>
+</reflist>
+</ownedPresentation>
+</Diagram>
+<Comment id="6203b92e-71b7-11ec-a409-f47b099bf663">
+<body>
+<val>Define the major artifacts that manifest implementation of your components. Indicate how they are deployed on hardware nodes, their inter-dependencies and communication protocols.</val>
+</body>
+<presentation>
+<reflist>
+<ref refid="6203ccac-71b7-11ec-a409-f47b099bf663"/>
+</reflist>
+</presentation>
+</Comment>
+<CommentItem id="6203ccac-71b7-11ec-a409-f47b099bf663">
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, -7.59375, 75.08984375)</val>
+</matrix>
+<top-left>
+<val>(0.0, 0.0)</val>
+</top-left>
+<width>
+<val>271.0</val>
+</width>
+<height>
+<val>129.0</val>
+</height>
+<diagram>
+<ref refid="0b5ba60e-71b7-11ec-a409-f47b099bf663"/>
+</diagram>
+<subject>
+<ref refid="6203b92e-71b7-11ec-a409-f47b099bf663"/>
+</subject>
+</CommentItem>
+<Diagram id="5b5e374a-6039-11ef-a1e6-0dc5f713f0e8">
+<diagramType>
+<val>cls</val>
+</diagramType>
+<element>
+<ref refid="58d6c2e8-66f8-11ec-b4c8-0456e5e540ed"/>
+</element>
+<name>
+<val>Videojuego Programación II</val>
+</name>
+<ownedPresentation>
+<reflist>
+<ref refid="62f075ff-6039-11ef-a66d-0dc5f713f0e8"/>
+<ref refid="dea97307-603c-11ef-9468-0dc5f713f0e8"/>
+<ref refid="1dd6dada-609f-11ef-981b-2b73aa027338"/>
+<ref refid="5891bdf0-609f-11ef-91c0-2b73aa027338"/>
+</reflist>
+</ownedPresentation>
+</Diagram>
+<Class id="62ef7f96-6039-11ef-9bbe-0dc5f713f0e8">
+<name>
+<val>Personaje</val>
+</name>
+<ownedAttribute>
+<reflist>
+<ref refid="6b75e359-6039-11ef-9c59-0dc5f713f0e8"/>
+<ref refid="6e67c8f2-6039-11ef-ad20-0dc5f713f0e8"/>
+<ref refid="75964a95-6039-11ef-9e2f-0dc5f713f0e8"/>
+<ref refid="7868750e-6039-11ef-9b2b-0dc5f713f0e8"/>
+<ref refid="7a09cbe9-6039-11ef-b907-0dc5f713f0e8"/>
+<ref refid="7c0d1b18-6039-11ef-b62f-0dc5f713f0e8"/>
+<ref refid="8f114c47-6039-11ef-a58e-0dc5f713f0e8"/>
+<ref refid="facc41f2-603c-11ef-9c28-0dc5f713f0e8"/>
+<ref refid="fd9966d0-603c-11ef-b1b1-0dc5f713f0e8"/>
+<ref refid="3e1d138d-603d-11ef-a0b1-0dc5f713f0e8"/>
+</reflist>
+</ownedAttribute>
+<ownedOperation>
+<reflist>
+<ref refid="82f26f92-6039-11ef-a7fe-0dc5f713f0e8"/>
+<ref refid="87e02e63-6039-11ef-9d29-0dc5f713f0e8"/>
+<ref refid="8cae7764-6039-11ef-8b46-0dc5f713f0e8"/>
+<ref refid="f33535e9-603c-11ef-8e8c-0dc5f713f0e8"/>
+<ref refid="3ba70dff-603d-11ef-8b91-0dc5f713f0e8"/>
+</reflist>
+</ownedOperation>
+<package>
+<ref refid="58d6c2e8-66f8-11ec-b4c8-0456e5e540ed"/>
+</package>
+<presentation>
+<reflist>
+<ref refid="62f075ff-6039-11ef-a66d-0dc5f713f0e8"/>
+</reflist>
+</presentation>
+</Class>
+<ClassItem id="62f075ff-6039-11ef-a66d-0dc5f713f0e8">
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, 199.14416970147028, 252.33443076522258)</val>
+</matrix>
+<top-left>
+<val>(-189.45998829575888, -85.0)</val>
+</top-left>
+<width>
+<val>344.4599882957589</val>
+</width>
+<height>
+<val>329.5041211227059</val>
+</height>
+<diagram>
+<ref refid="5b5e374a-6039-11ef-a1e6-0dc5f713f0e8"/>
+</diagram>
+<subject>
+<ref refid="62ef7f96-6039-11ef-9bbe-0dc5f713f0e8"/>
+</subject>
+</ClassItem>
+<Property id="6b75e359-6039-11ef-9c59-0dc5f713f0e8">
+<class_>
+<ref refid="62ef7f96-6039-11ef-9bbe-0dc5f713f0e8"/>
+</class_>
+<name>
+<val>id_personaje</val>
+</name>
+</Property>
+<Property id="6e67c8f2-6039-11ef-ad20-0dc5f713f0e8">
+<class_>
+<ref refid="62ef7f96-6039-11ef-9bbe-0dc5f713f0e8"/>
+</class_>
+<name>
+<val>nombre</val>
+</name>
+</Property>
+<Property id="75964a95-6039-11ef-9e2f-0dc5f713f0e8">
+<class_>
+<ref refid="62ef7f96-6039-11ef-9bbe-0dc5f713f0e8"/>
+</class_>
+<name>
+<val>especie</val>
+</name>
+</Property>
+<Property id="7868750e-6039-11ef-9b2b-0dc5f713f0e8">
+<class_>
+<ref refid="62ef7f96-6039-11ef-9bbe-0dc5f713f0e8"/>
+</class_>
+<name>
+<val>salud</val>
+</name>
+</Property>
+<Property id="7a09cbe9-6039-11ef-b907-0dc5f713f0e8">
+<class_>
+<ref refid="62ef7f96-6039-11ef-9bbe-0dc5f713f0e8"/>
+</class_>
+<name>
+<val>daño</val>
+</name>
+</Property>
+<Property id="7c0d1b18-6039-11ef-b62f-0dc5f713f0e8">
+<class_>
+<ref refid="62ef7f96-6039-11ef-9bbe-0dc5f713f0e8"/>
+</class_>
+<name>
+<val>hambre</val>
+</name>
+</Property>
+<Operation id="82f26f92-6039-11ef-a7fe-0dc5f713f0e8">
+<class_>
+<ref refid="62ef7f96-6039-11ef-9bbe-0dc5f713f0e8"/>
+</class_>
+<name>
+<val>recoger_arma</val>
+</name>
+</Operation>
+<Operation id="87e02e63-6039-11ef-9d29-0dc5f713f0e8">
+<class_>
+<ref refid="62ef7f96-6039-11ef-9bbe-0dc5f713f0e8"/>
+</class_>
+<name>
+<val>soltar_arma</val>
+</name>
+</Operation>
+<Operation id="8cae7764-6039-11ef-8b46-0dc5f713f0e8">
+<class_>
+<ref refid="62ef7f96-6039-11ef-9bbe-0dc5f713f0e8"/>
+</class_>
+<name>
+<val>comer</val>
+</name>
+</Operation>
+<Property id="8f114c47-6039-11ef-a58e-0dc5f713f0e8">
+<class_>
+<ref refid="62ef7f96-6039-11ef-9bbe-0dc5f713f0e8"/>
+</class_>
+<name>
+<val>artículos_portados</val>
+</name>
+</Property>
+<Class id="dea8c436-603c-11ef-8154-0dc5f713f0e8">
+<name>
+<val>Enemigo</val>
+</name>
+<ownedAttribute>
+<reflist>
+<ref refid="e3a1f040-603c-11ef-8d08-0dc5f713f0e8"/>
+<ref refid="033535d5-603d-11ef-9b17-0dc5f713f0e8"/>
+<ref refid="060512d6-603d-11ef-b109-0dc5f713f0e8"/>
+<ref refid="0851dce3-603d-11ef-adc4-0dc5f713f0e8"/>
+<ref refid="09fd20c6-603d-11ef-9b23-0dc5f713f0e8"/>
+<ref refid="28d886ce-603d-11ef-9c10-0dc5f713f0e8"/>
+<ref refid="2b663e21-603d-11ef-b8ff-0dc5f713f0e8"/>
+</reflist>
+</ownedAttribute>
+<ownedOperation>
+<reflist>
+<ref refid="2eafa984-603d-11ef-b0a5-0dc5f713f0e8"/>
+<ref refid="3309d5d4-603d-11ef-816d-0dc5f713f0e8"/>
+<ref refid="3733a892-603d-11ef-9703-0dc5f713f0e8"/>
+</reflist>
+</ownedOperation>
+<package>
+<ref refid="58d6c2e8-66f8-11ec-b4c8-0456e5e540ed"/>
+</package>
+<presentation>
+<reflist>
+<ref refid="dea97307-603c-11ef-9468-0dc5f713f0e8"/>
+</reflist>
+</presentation>
+</Class>
+<ClassItem id="dea97307-603c-11ef-9468-0dc5f713f0e8">
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, 369.61198039426154, 205.23074114764174)</val>
+</matrix>
+<top-left>
+<val>(0.0, 0.0)</val>
+</top-left>
+<width>
+<val>244.11748956750944</val>
+</width>
+<height>
+<val>236.20737923516168</val>
+</height>
+<diagram>
+<ref refid="5b5e374a-6039-11ef-a1e6-0dc5f713f0e8"/>
+</diagram>
+<subject>
+<ref refid="dea8c436-603c-11ef-8154-0dc5f713f0e8"/>
+</subject>
+</ClassItem>
+<Property id="e3a1f040-603c-11ef-8d08-0dc5f713f0e8">
+<class_>
+<ref refid="dea8c436-603c-11ef-8154-0dc5f713f0e8"/>
+</class_>
+<name>
+<val>id_enemigo</val>
+</name>
+</Property>
+<Operation id="f33535e9-603c-11ef-8e8c-0dc5f713f0e8">
+<class_>
+<ref refid="62ef7f96-6039-11ef-9bbe-0dc5f713f0e8"/>
+</class_>
+<name>
+<val>moverse</val>
+</name>
+</Operation>
+<Property id="facc41f2-603c-11ef-9c28-0dc5f713f0e8">
+<class_>
+<ref refid="62ef7f96-6039-11ef-9bbe-0dc5f713f0e8"/>
+</class_>
+<name>
+<val>posición_x</val>
+</name>
+</Property>
+<Property id="fd9966d0-603c-11ef-b1b1-0dc5f713f0e8">
+<class_>
+<ref refid="62ef7f96-6039-11ef-9bbe-0dc5f713f0e8"/>
+</class_>
+<name>
+<val>posición_y</val>
+</name>
+</Property>
+<Property id="033535d5-603d-11ef-9b17-0dc5f713f0e8">
+<class_>
+<ref refid="dea8c436-603c-11ef-8154-0dc5f713f0e8"/>
+</class_>
+<name>
+<val>nombre</val>
+</name>
+</Property>
+<Property id="060512d6-603d-11ef-b109-0dc5f713f0e8">
+<class_>
+<ref refid="dea8c436-603c-11ef-8154-0dc5f713f0e8"/>
+</class_>
+<name>
+<val>especie</val>
+</name>
+</Property>
+<Property id="0851dce3-603d-11ef-adc4-0dc5f713f0e8">
+<class_>
+<ref refid="dea8c436-603c-11ef-8154-0dc5f713f0e8"/>
+</class_>
+<name>
+<val>salud</val>
+</name>
+</Property>
+<Property id="09fd20c6-603d-11ef-9b23-0dc5f713f0e8">
+<class_>
+<ref refid="dea8c436-603c-11ef-8154-0dc5f713f0e8"/>
+</class_>
+<name>
+<val>daño</val>
+</name>
+</Property>
+<Property id="28d886ce-603d-11ef-9c10-0dc5f713f0e8">
+<class_>
+<ref refid="dea8c436-603c-11ef-8154-0dc5f713f0e8"/>
+</class_>
+<name>
+<val>posición_x</val>
+</name>
+</Property>
+<Property id="2b663e21-603d-11ef-b8ff-0dc5f713f0e8">
+<class_>
+<ref refid="dea8c436-603c-11ef-8154-0dc5f713f0e8"/>
+</class_>
+<name>
+<val>posición_y</val>
+</name>
+</Property>
+<Operation id="2eafa984-603d-11ef-b0a5-0dc5f713f0e8">
+<class_>
+<ref refid="dea8c436-603c-11ef-8154-0dc5f713f0e8"/>
+</class_>
+<isAbstract>
+<val>0</val>
+</isAbstract>
+<name>
+<val>moverse</val>
+</name>
+</Operation>
+<Operation id="3309d5d4-603d-11ef-816d-0dc5f713f0e8">
+<class_>
+<ref refid="dea8c436-603c-11ef-8154-0dc5f713f0e8"/>
+</class_>
+<name>
+<val>recoger_arma</val>
+</name>
+</Operation>
+<Operation id="3733a892-603d-11ef-9703-0dc5f713f0e8">
+<class_>
+<ref refid="dea8c436-603c-11ef-8154-0dc5f713f0e8"/>
+</class_>
+<name>
+<val>soltar_arma</val>
+</name>
+</Operation>
+<Operation id="3ba70dff-603d-11ef-8b91-0dc5f713f0e8">
+<class_>
+<ref refid="62ef7f96-6039-11ef-9bbe-0dc5f713f0e8"/>
+</class_>
+<name>
+<val>morir</val>
+</name>
+</Operation>
+<Property id="3e1d138d-603d-11ef-a0b1-0dc5f713f0e8">
+<class_>
+<ref refid="62ef7f96-6039-11ef-9bbe-0dc5f713f0e8"/>
+</class_>
+<name>
+<val>morir</val>
+</name>
+</Property>
+<Class id="1dd627bb-609f-11ef-a652-2b73aa027338">
+<name>
+<val>Inmueble</val>
+</name>
+<ownedAttribute>
+<reflist>
+<ref refid="2fe64c31-609f-11ef-bd3a-2b73aa027338"/>
+<ref refid="42d7768a-609f-11ef-b679-2b73aa027338"/>
+<ref refid="48d8bdad-609f-11ef-87fc-2b73aa027338"/>
+<ref refid="513b0047-609f-11ef-bdfc-2b73aa027338"/>
+<ref refid="53e62176-609f-11ef-927a-2b73aa027338"/>
+<ref refid="6e68ebce-609f-11ef-92c8-2b73aa027338"/>
+</reflist>
+</ownedAttribute>
+<package>
+<ref refid="58d6c2e8-66f8-11ec-b4c8-0456e5e540ed"/>
+</package>
+<presentation>
+<reflist>
+<ref refid="1dd6dada-609f-11ef-981b-2b73aa027338"/>
+</reflist>
+</presentation>
+</Class>
+<ClassItem id="1dd6dada-609f-11ef-981b-2b73aa027338">
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, 150.28753772938907, 550.2803955078125)</val>
+</matrix>
+<top-left>
+<val>(0.0, 0.0)</val>
+</top-left>
+<width>
+<val>125.0</val>
+</width>
+<height>
+<val>159.0</val>
+</height>
+<diagram>
+<ref refid="5b5e374a-6039-11ef-a1e6-0dc5f713f0e8"/>
+</diagram>
+<subject>
+<ref refid="1dd627bb-609f-11ef-a652-2b73aa027338"/>
+</subject>
+</ClassItem>
+<Property id="2fe64c31-609f-11ef-bd3a-2b73aa027338">
+<class_>
+<ref refid="1dd627bb-609f-11ef-a652-2b73aa027338"/>
+</class_>
+<name>
+<val>id_inmueble</val>
+</name>
+</Property>
+<Property id="42d7768a-609f-11ef-b679-2b73aa027338">
+<class_>
+<ref refid="1dd627bb-609f-11ef-a652-2b73aa027338"/>
+</class_>
+<name>
+<val>capacidad</val>
+</name>
+</Property>
+<Property id="48d8bdad-609f-11ef-87fc-2b73aa027338">
+<class_>
+<ref refid="1dd627bb-609f-11ef-a652-2b73aa027338"/>
+</class_>
+<name>
+<val>salud</val>
+</name>
+</Property>
+<Property id="513b0047-609f-11ef-bdfc-2b73aa027338">
+<class_>
+<ref refid="1dd627bb-609f-11ef-a652-2b73aa027338"/>
+</class_>
+<name>
+<val>posición_x</val>
+</name>
+</Property>
+<Property id="53e62176-609f-11ef-927a-2b73aa027338">
+<class_>
+<ref refid="1dd627bb-609f-11ef-a652-2b73aa027338"/>
+</class_>
+<name>
+<val>posición_y</val>
+</name>
+</Property>
+<Class id="58909d89-609f-11ef-a77c-2b73aa027338">
+<name>
+<val>Muebles</val>
+</name>
+<ownedAttribute>
+<reflist>
+<ref refid="5ca2772b-609f-11ef-b10a-2b73aa027338"/>
+<ref refid="60f662d6-609f-11ef-9d32-2b73aa027338"/>
+<ref refid="786866be-609f-11ef-adbe-2b73aa027338"/>
+<ref refid="7cf54d56-609f-11ef-9f75-2b73aa027338"/>
+<ref refid="82c3b21f-609f-11ef-9968-2b73aa027338"/>
+<ref refid="85b25734-609f-11ef-abc3-2b73aa027338"/>
+</reflist>
+</ownedAttribute>
+<ownedOperation>
+<reflist>
+<ref refid="0dbfd830-60a0-11ef-b40b-2b73aa027338"/>
+<ref refid="12842d78-60a0-11ef-b3ec-2b73aa027338"/>
+</reflist>
+</ownedOperation>
+<package>
+<ref refid="58d6c2e8-66f8-11ec-b4c8-0456e5e540ed"/>
+</package>
+<presentation>
+<reflist>
+<ref refid="5891bdf0-609f-11ef-91c0-2b73aa027338"/>
+</reflist>
+</presentation>
+</Class>
+<ClassItem id="5891bdf0-609f-11ef-91c0-2b73aa027338">
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, 379.67072517801626, 489.22711181640625)</val>
+</matrix>
+<top-left>
+<val>(0.0, 0.0)</val>
+</top-left>
+<width>
+<val>112.0</val>
+</width>
+<height>
+<val>193.0</val>
+</height>
+<diagram>
+<ref refid="5b5e374a-6039-11ef-a1e6-0dc5f713f0e8"/>
+</diagram>
+<subject>
+<ref refid="58909d89-609f-11ef-a77c-2b73aa027338"/>
+</subject>
+</ClassItem>
+<Property id="5ca2772b-609f-11ef-b10a-2b73aa027338">
+<class_>
+<ref refid="58909d89-609f-11ef-a77c-2b73aa027338"/>
+</class_>
+<name>
+<val>id_mueble</val>
+</name>
+</Property>
+<Property id="60f662d6-609f-11ef-9d32-2b73aa027338">
+<class_>
+<ref refid="58909d89-609f-11ef-a77c-2b73aa027338"/>
+</class_>
+<name>
+<val>tipo_mueble</val>
+</name>
+</Property>
+<Property id="6e68ebce-609f-11ef-92c8-2b73aa027338">
+<class_>
+<ref refid="1dd627bb-609f-11ef-a652-2b73aa027338"/>
+</class_>
+<name>
+<val>tipo_inmueble</val>
+</name>
+</Property>
+<Property id="786866be-609f-11ef-adbe-2b73aa027338">
+<class_>
+<ref refid="58909d89-609f-11ef-a77c-2b73aa027338"/>
+</class_>
+<name>
+<val>daño</val>
+</name>
+</Property>
+<Property id="7cf54d56-609f-11ef-9f75-2b73aa027338">
+<class_>
+<ref refid="58909d89-609f-11ef-a77c-2b73aa027338"/>
+</class_>
+<name>
+<val>munición</val>
+</name>
+</Property>
+<Property id="82c3b21f-609f-11ef-9968-2b73aa027338">
+<class_>
+<ref refid="58909d89-609f-11ef-a77c-2b73aa027338"/>
+</class_>
+<name>
+<val>posición_x</val>
+</name>
+</Property>
+<Property id="85b25734-609f-11ef-abc3-2b73aa027338">
+<class_>
+<ref refid="58909d89-609f-11ef-a77c-2b73aa027338"/>
+</class_>
+<name>
+<val>posición_y</val>
+</name>
+</Property>
+<Operation id="0dbfd830-60a0-11ef-b40b-2b73aa027338">
+<class_>
+<ref refid="58909d89-609f-11ef-a77c-2b73aa027338"/>
+</class_>
+<name>
+<val>disparar</val>
+</name>
+</Operation>
+<Operation id="12842d78-60a0-11ef-b3ec-2b73aa027338">
+<class_>
+<ref refid="58909d89-609f-11ef-a77c-2b73aa027338"/>
+</class_>
+<name>
+<val>recargar</val>
+</name>
+</Operation>
+</gaphor>

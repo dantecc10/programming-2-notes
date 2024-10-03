@@ -1,0 +1,190 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "OperaConjunto",
+            "request": "launch",
+            "mainClass": "practices.Conjuntos.OperaConjunto",
+            "projectName": "programming-2-notes"
+        },
+        {
+            "type": "java",
+            "name": "ClinicaDental",
+            "request": "launch",
+            "mainClass": "practices.ClinicaDental",
+            "projectName": "programming-2-notes"
+        },
+        {
+            "type": "java",
+            "name": "ClinicaDental2",
+            "request": "launch",
+            "mainClass": "practices.Clínica.ClinicaDental2",
+            "projectName": "programming-2-notes"
+        },
+        {
+            "type": "java",
+            "name": "ClinicaDental",
+            "request": "launch",
+            "mainClass": "practices.Clínica.ClinicaDental",
+            "projectName": "programming-2-notes"
+        },
+        {
+            "type": "java",
+            "name": "SistemaDental",
+            "request": "launch",
+            "mainClass": "practices.Clínica.SistemaDental",
+            "projectName": "programming-2-notes"
+        },
+        {
+            "type": "java",
+            "name": "Dentista",
+            "request": "launch",
+            "mainClass": "practices.Clínica.Dentista",
+            "projectName": "programming-2-notes"
+        },
+        {
+            "type": "java",
+            "name": "FigGeometrica",
+            "request": "launch",
+            "mainClass": "practices.FigGeometrica.FigGeometrica",
+            "projectName": "programming-2-notes"
+        },
+        {
+            "type": "java",
+            "name": "FigGeometrica",
+            "request": "launch",
+            "mainClass": "FigGeometrica",
+            "projectName": "programming-2-notes"
+        },
+        {
+            "type": "java",
+            "name": "AplicaArreglo",
+            "request": "launch",
+            "mainClass": "practices.arreglos6.AplicaArreglo",
+            "projectName": "programming-2-notes"
+        },
+        {
+            "type": "java",
+            "name": "Execute",
+            "request": "launch",
+            "mainClass": "Execute",
+            "projectName": "programming-2-notes"
+        },
+        {
+            "type": "java",
+            "name": "CalFrac",
+            "request": "launch",
+            "mainClass": "practices.fracciones8.CalFrac",
+            "projectName": "programming-2-notes"
+        },
+        {
+            "type": "java",
+            "name": "Calculadora",
+            "request": "launch",
+            "mainClass": "homework.complejos4.Calculadora",
+            "projectName": "programming-2-notes"
+        },
+        {
+            "type": "java",
+            "name": "CafeInternet",
+            "request": "launch",
+            "mainClass": "practices.cafe7.CafeInternet",
+            "projectName": "programming-2-notes"
+        },
+        {
+            "type": "java",
+            "name": "AplicaArreglo",
+            "request": "launch",
+            "mainClass": "practices.arreglos6.AplicaArreglo",
+            "projectName": "programming-2-notes_5eacf0cc"
+        },
+        {
+            "type": "java",
+            "name": "AplicaArreglo",
+            "request": "launch",
+            "mainClass": "AplicaArreglo",
+            "projectName": "programming-2-notes_5eacf0cc"
+        },
+        {
+            "type": "java",
+            "name": "CafeInternet",
+            "request": "launch",
+            "mainClass": "Cafe.CafeInternet",
+            "projectName": "programming-2-notes"
+        },
+        {
+            "type": "java",
+            "name": "CalFrac",
+            "request": "launch",
+            "mainClass": "Fracciones.CalFrac",
+            "projectName": "programming-2-notes"
+        },
+        {
+            "type": "java",
+            "name": "CalFrac",
+            "request": "launch",
+            "mainClass": "Fracciones.CalFrac",
+            "projectName": "programming-2-notes_5eacf0cc"
+        },
+        {
+            "type": "java",
+            "name": "Divisible",
+            "request": "launch",
+            "mainClass": "Divisible",
+            "projectName": "programming-2-notes_5eacf0cc"
+        },
+        {
+            "type": "java",
+            "name": "Calculadora",
+            "request": "launch",
+            "mainClass": "Calculadora",
+            "projectName": "programming-2-notes_5eacf0cc"
+        },
+        {
+            "type": "java",
+            "name": "Calculadora",
+            "request": "launch",
+            "mainClass": "CalculadoraComplejos.Calculadora",
+            "projectName": "programming-2-notes_5eacf0cc"
+        },
+        {
+            "type": "java",
+            "name": "Divisible",
+            "request": "launch",
+            "mainClass": "Divisible",
+            "projectName": "programming-2-notes_5b64bf76"
+        },
+        {
+            "type": "java",
+            "name": "Calculadora",
+            "request": "launch",
+            "mainClass": "Calculadora",
+            "projectName": "programming-2-notes_5b64bf76"
+        },
+        {
+            "type": "java",
+            "name": "AplicaComplejo",
+            "request": "launch",
+            "mainClass": "AplicaComplejo",
+            "projectName": "programming-2-notes_5b64bf76"
+        },
+        {
+            "type": "java",
+            "name": "HelloGraphic",
+            "request": "launch",
+            "mainClass": "HelloGraphic",
+            "projectName": "programming-2-notes_5b64bf76"
+        },
+        {
+            "type": "java",
+            "name": "HelloWorld",
+            "request": "launch",
+            "mainClass": "HelloWorld",
+            "projectName": "programming-2-notes_5b64bf76"
+        }
+    ]
+}
