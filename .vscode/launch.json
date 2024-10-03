@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ClinicaDental",
+            "request": "launch",
+            "mainClass": "practices.ClinicaDental",
+            "projectName": "programming-2-notes"
+        },
+        {
+            "type": "java",
+            "name": "ClinicaDental2",
+            "request": "launch",
+            "mainClass": "practices.Clínica.ClinicaDental2",
+            "projectName": "programming-2-notes"
+        },
+        {
+            "type": "java",
+            "name": "ClinicaDental",
+            "request": "launch",
+            "mainClass": "practices.Clínica.ClinicaDental",
+            "projectName": "programming-2-notes"
+        },
+        {
+            "type": "java",
+            "name": "SistemaDental",
+            "request": "launch",
+            "mainClass": "practices.Clínica.SistemaDental",
+            "projectName": "programming-2-notes"
+        },
+        {
+            "type": "java",
+            "name": "Dentista",
+            "request": "launch",
+            "mainClass": "practices.Clínica.Dentista",
+            "projectName": "programming-2-notes"
+        },
+        {
+            "type": "java",
             "name": "FigGeometrica",
             "request": "launch",
             "mainClass": "practices.FigGeometrica.FigGeometrica",
