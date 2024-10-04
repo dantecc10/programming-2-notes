@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "main",
+            "request": "launch",
+            "mainClass": "practices.instruments.main",
+            "projectName": "programming-2-notes"
+        },
+        {
+            "type": "java",
             "name": "OperaConjunto",
             "request": "launch",
             "mainClass": "practices.Conjuntos.OperaConjunto",
