@@ -114,7 +114,7 @@ public class ClinicaDental {
         Dentista dentista1 = new Dentista("Dr. Carlos Pérez", "Av. Siempre Viva 123", "2228048348", "1234567", "Lunes a Viernes 8am - 8pm", "Endodoncia", "Consultorio 117");
 
         // Creación del paciente con un doctor asignado
-        Paciente paciente1 = new Paciente("Oswaldo Huertero", "123 Oriente", "2221887054", 101, "17/06/2024", "Caries", 25, 65.5, 1.65, "120/80", "Tratamiento de ortodoncia", "Eliminación de Caries", dentista1);
+        Paciente paciente1 = new Paciente("Oswaldo Huertero", "123 Oriente", "2221887054", 101, "17/06/2024", "Caries", 25, 65.5, 1.82, "120/80", "Tratamiento de ortodoncia", "Eliminación de Caries", dentista1);
 
         // Creación del paciente sin doctor asignado
         Paciente paciente2 = new Paciente("Juan Pérez", "Calle Ejemplo 789", "555-6789", 102, "15/10/2024", "Dolor de muelas", 30, 70.0, 1.75, "130/85", "Análisis", "Ninguno", null);
