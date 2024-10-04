@@ -83,16 +83,16 @@ class Paciente extends Persona {
 public class ClinicaDental {
     public static void main(String[] args) {
         // Creación del dentista
-        Dentista dentista1 = new Dentista("Dr. Carlos Pérez", "Av. Siempre Viva 123", "555-1234", "1234567", "9am - 6pm", "Endodoncia", "Consultorio 101");
+        Dentista dentista1 = new Dentista("Dr. Carlos Pérez", "Av. Siempre Viva 123", "2221887054", "1234567", "9am - 6pm", "Endodoncia", "Consultorio 101");
 
         // Creación del paciente con un doctor asignado
-        Paciente paciente1 = new Paciente("Ana López", "Calle Falsa 456", "555-5678", 101, "10/10/2024", "Caries", 25, 65.5, 1.65, "120/80", "Tratamiento de conducto", "Radiografía", dentista1);
+        Paciente paciente1 = new Paciente("Ana López", "Calle 456", "2228048348", 101, "10/10/2024", "Caries", 25, 65.5, 1.65, "120/80", "Tratamiento de conducto", "Radiografía", dentista1);
 
         // Verificar que el paciente está atendido por un doctor
         paciente1.verificarDoctorAsignado();
 
         // Creación del paciente sin doctor asignado
-        Paciente paciente2 = new Paciente("Juan Pérez", "Calle Ejemplo 789", "555-6789", 102, "15/10/2024", "Dolor de muelas", 30, 70.0, 1.75, "130/85", "Análisis", "Ninguno", null);
+        Paciente paciente2 = new Paciente("Juan Pérez", "Calle 789", "2023283364", 102, "15/10/2024", "Dolor de muelas", 30, 70.0, 1.75, "130/85", "Análisis", "Ninguno", null);
 
         // Verificar que el paciente no tiene doctor asignado
         paciente2.verificarDoctorAsignado();
