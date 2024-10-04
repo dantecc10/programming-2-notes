@@ -98,7 +98,7 @@ class Paciente extends Persona {
     // Método para verificar si el doctor asignado existe
     public boolean verificarDoctorAsignado() {
         if (this.doctorAsignado != null) {
-            System.out.println("Paciente: " + nombre + " es atendido por: " + doctorAsignado.nombre);
+            System.out.println("\nPaciente: " + nombre + " es atendido por: " + doctorAsignado.nombre);
             return true;
         } else {
             System.out.println("Paciente: " + nombre + " no tiene doctor asignado.");
