@@ -22,6 +22,22 @@ public class Trapezoid extends FigureGeometric {
     }
 
     // -----| Methods |-----
+    public float getBase1() {
+        return base1;
+    }
+
+    public float getBase2() {
+        return base2;
+    }
+
+    public void setBase1(float base1) {
+        this.base1 = base1;
+    }
+
+    public void setBase2(float base2) {
+        this.base2 = base2;
+    }
+
     public float area() {
         return ((base1 + base2) * length) / 2;
     }
