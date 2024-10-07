@@ -1,5 +1,5 @@
 
-package practices.conjuntos;
+package practices.Conjuntos;
 
 import java.util.Scanner;
 
