@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "practices.Clases.Main",
+            "projectName": "programming-2-notes"
+        },
+        {
+            "type": "java",
+            "name": "main",
+            "request": "launch",
+            "mainClass": "practices.Clases.main",
+            "projectName": "programming-2-notes"
+        },
+        {
+            "type": "java",
             "name": "FigurasGeometricas",
             "request": "launch",
             "mainClass": "practices.ClasesAbs2.FigurasGeometricas",
