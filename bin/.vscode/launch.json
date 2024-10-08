@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "FigurasGeometricas",
+            "request": "launch",
+            "mainClass": "practices.ClasesAbs2.FigurasGeometricas",
+            "projectName": "programming-2-notes"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "practices.ClasesAbs2.Main",
+            "projectName": "programming-2-notes"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "programming-2-notes"
+        },
+        {
+            "type": "java",
             "name": "Main",
             "request": "launch",
             "mainClass": "practices.AbstractTwo.Main",
