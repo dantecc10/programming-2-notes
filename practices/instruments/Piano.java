@@ -1,8 +1,8 @@
 package practices.instruments;
 
-public class Guitar extends Instrument {
+public class Piano extends Instrument {
 
-    public Guitar(String name, String sound) {
+    public Piano(String name, String sound) {
         super(name, sound);
     }
 
