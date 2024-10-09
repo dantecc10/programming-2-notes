@@ -65,3 +65,17 @@ class Desarollador extends Empleado implements Evaluable {
         return "Desarrollador: " + nombre + ", Salario: " + calcularSalario() + ", Lenguaje: " + lenguajeProgramacion;
     }
 }
+
+// Clase Principal
+public class MainGestion {
+    public static void main(String[] args) {
+        Gerente gerente = new Gerente("Fanny", 800000, 15000);
+        Desarollador desarrollador = new Desarollador("Alejandro", 60000, "Java");
+
+        gerente.evaluarDesempeño();
+        System.out.println(gerente.getDetalles());
+
+        desarrollador.evaluarDesempeño();
+        System.out.println(desarrollador.getDetalles());
+    }
+}
