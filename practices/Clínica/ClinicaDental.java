@@ -57,12 +57,13 @@ public class ClinicaDental {
                 numeroPaciente, proximaCita, problemaDental, edad, peso, estatura,
                 presionArterial, tratamiento, estudios);
 
+
         // Asignar el dentista al paciente
         paciente.setDoctorAsignado(dentista);
 
-        // Mostrar la información
-        System.out.println("\nEl paciente " + paciente.getNombre() + " está siendo atendido por el dentista " +
-                paciente.getDoctorAsignado().getNombre() + ", especializado en " + dentista.getEspecializacion());
+        // Mostrar estado del paciente
+        System.out.println("\nEstado final del paciente:");
+        System.out.println(paciente.obtenerEstadoAtencion());
 
         scanner.close();
     }

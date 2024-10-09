@@ -11,6 +11,7 @@ public class Paciente extends Persona {
     private String tratamiento;
     private String estudios;
     private Dentista doctorAsignado;
+    private boolean tieneDoctor;
 
     // Constructor
     public Paciente(String nombre, String direccion, String telefono, int numeroPaciente,
@@ -27,13 +28,24 @@ public class Paciente extends Persona {
                         this.presionArterial = presionArterial;
                         this.tratamiento = tratamiento;
                         this.estudios = estudios;
+                        this.tieneDoctor = false;
     }
 
     public void setDoctorAsignado(Dentista doctorAsignado) {
         this.doctorAsignado = doctorAsignado;
+        this.tieneDoctor = true;
     }
 
     public Dentista getDoctorAsignado() {
         return doctorAsignado;
+    }
+    
+    public String obtenerEstadoAtencion() {
+        if (tieneDoctor) {
+            return "El paciente " + this.getNombre() + " está siendo atendido por el dentista " +
+                   this.getDoctorAsignado().getNombre() + ", especializado en " + this.getDoctorAsignado().getEspecializacion();
+        } else {
+            return "El paciente " + this.getNombre() + " aún no tiene un doctor asignado.";
+        }
     }
 }
