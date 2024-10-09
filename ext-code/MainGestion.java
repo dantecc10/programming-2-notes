@@ -37,7 +37,7 @@ class Gerente extends Empleado implements Evaluable {
 
     @Override
     public String getDetalles() {
-        return "Desarrollador: " + nombre + ", Salario: " + calcularSalario() + ", Lenguaje: " + lenguaje;
+        return "Desarrollador: " + nombre + ", Salario: " + calcularSalario() + ", Bono: " + bono;
     }
 }
 
