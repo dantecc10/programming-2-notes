@@ -66,7 +66,7 @@ class Desarollador extends Empleado implements Evaluable {
     }
 }
 
-// Clase Principal
+// Clase Principal para ejecutar el programa
 public class MainGestion {
     public static void main(String[] args) {
         Gerente gerente = new Gerente("Fanny", 800000, 15000);
