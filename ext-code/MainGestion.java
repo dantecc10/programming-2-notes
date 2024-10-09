@@ -30,7 +30,6 @@ class Gerente extends Empleado implements Evaluable {
         return salarioBase + bono;
     }
 
-    @Override
     public double evaluarDesempeño() {
         System.out.println("Evaluando desemepeño del gerente " + nombre + ".");
     }
