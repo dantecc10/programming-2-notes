@@ -30,7 +30,7 @@ class Gerente extends Empleado implements Evaluable {
         return salarioBase + bono;
     }
 
-    public double evaluarDesempeño() {
+    public void evaluarDesempeño() {
         System.out.println("Evaluando desemepeño del gerente " + nombre + ".");
     }
 
