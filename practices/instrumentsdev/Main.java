@@ -1,6 +1,6 @@
 package practices.instrumentsdev;
 
-public class Main {
+public class Main { 
     public static void main(String[] args) {
         final String path = "/practices/instrumentsdev/sounds/"; // Cambiar a ruta relativa
         Instrument instruments[];
