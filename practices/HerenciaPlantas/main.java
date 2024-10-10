@@ -1,6 +1,6 @@
 package practices.HerenciaPlantas;
 
-public class ProgramaPlantas {
+public class main {
     public static void main(String[] args) {
         ClasificadorPlantas clasificador = new ClasificadorPlantas();
 
