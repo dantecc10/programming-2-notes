@@ -19,12 +19,10 @@ class Cicada extends Gimnosperma {
         super(nombre, "Pinnada");
     }
 
-    @Override
     public void fotosintesis() {
         System.out.println(nombre + " realiza fotosíntesis a través de sus hojas pinnadas.");
     }
 
-    @Override
     public String obtenerClasificacion() {
         return "Gimnosperma - Cicada";
     }
