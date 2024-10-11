@@ -4,6 +4,7 @@ public class Main {
     public static void main(String[] args) {
         final String path = "/practices/instrumentsdev/sounds/"; // Cambiar a ruta relativa
         Instrument instruments[];
+        
         instruments = new Instrument[3];
         instruments[0] = new Guitar("Guitar", path + "acoustic-guitar.wav"); // Asegúrate de que la ruta sea correcta
         instruments[1] = new Trumpet("Trumpet", path + "trumpet.wav"); // Asegúrate de que la ruta sea correcta
