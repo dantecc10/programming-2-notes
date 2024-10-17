@@ -1,67 +1,163 @@
-.code
 main proc
     mov ax, @data
     mov ds, ax
 
-    ; Imprimir mensaje inicial
-    mov ah, 09h
-    lea dx, msg
-    int 21h
+    mov cx, 10               ; Contador para 10 números
+    mov si, offset fib       ; Puntero al array
 
-    mov cx, 10  ; Calcular 10 números de Fibonacci
-    mov ax, 0   ; Primer número
-    mov bx, 1   ; Segundo número
+    mov ax, 0                ; Primer número
+    mov bx, 1                ; Segundo número
 
 print_loop:
-    push cx
+    mov [si], ax             ; Guarda el número actual en el array
+    add si, 2                ; Mueve el puntero
 
-    ; Convertir número a string
-    mov num, ax
-    call num_to_str
+    ; Imprime el número
+    push bx                  ; Guarda BX
+    mov bx, ax               ; Mueve el número a BX para la impresión
+    call print_num           ; Llama a la rutina de impresión
+    pop bx                   ; Restaura BX
 
-    ; Imprimir número
-    mov ah, 09h
-    lea dx, buffer
-    int 21h
+    ; Calcula el siguiente número
+    mov dx, ax               ; Guarda el número anterior
+    mov ax, bx               ; AX = siguiente número
+    add bx, dx               ; BX = suma para el próximo número
 
-    ; Imprimir espacio
-    mov ah, 02h
-    mov dl, ' '
-    int 21h
-
-    ; Calcular siguiente número
-    mov cx, bx
-    add bx, ax
-    mov ax, cx
-
-    pop cx
     loop print_loop
 
-    ; Salir del programa
-    mov ah, 4ch
+    mov ah, 4Ch              ; Termina el programa
     int 21h
 main endp
 
+print_num proc
+    push ax
+    push cx
+    push dx
 
+    mov ax, bx               ; Número a imprimir en AX
+    mov cx, 0                ; Inicializa el contador de dígitos
+    mov bx, 10               ; Divisor
 
-num_to_str proc
-    mov ax, num
-    mov si, 5
-    mov bx, 10
+divide:
+    xor dx, dx               ; Limpia DX para la división
+    div bx                   ; Divide AX por 10
+    push dx                  ; Guarda el residuo (dígito)
+    inc cx                   ; Incrementa el contador de dígitos
+    test ax, ax              ; Verifica si el cociente es 0
+    jnz divide               ; Si no es 0, continúa dividiendo
 
-convert_loop:
-    xor dx, dx
-    div bx
-    add dl, '0'
-    mov buffer[si], dl
-    dec si
-    test ax, ax
-    jnz convert_loop
+print_digits:
+    pop dx                   ; Obtiene un dígito
+    add dl, '0'              ; Convierte a ASCII
+    mov ah, 2                ; Función de impresión de carácter
+    int 21h                  ; Llama a la interrupción del DOS
+    loop print_digits        ; Repite para todos los dígitos
 
-    inc si
-    mov dx, si
-    add dx, offset buffer
+    mov dl, ' '              ; Espacio entre números
+    mov ah, 2
+    int 21h
+
+    pop dx
+    pop cx
+    pop ax
     ret
-num_to_str endp
+print_num endp
 
 end main
+
+
+-------------------------------------------------------------------------
+
+start:
+    mov cx, 10       ; Contador para 10 números
+    mov ax, 0        ; Primer número de Fibonacci
+    mov bx, 1        ; Segundo número de Fibonacci
+    
+fib_loop:
+    push ax          ; Guarda el número actual en la pila
+    
+    mov dx, ax       ; Prepara para imprimir
+    ; Alternativas para convertir a ASCII:
+    add dl, 30h      ; Opción 1: Usa hexadecimal
+    ; add dl, 48     ; Opción 2: Usa decimal
+    ; add dl, 00110000b ; Opción 3: Usa binario
+    mov ah, 2        ; Función de impresión de carácter
+    int 21h
+    
+    mov dx, ax       ; Guarda el número anterior
+    mov ax, bx       ; AX = siguiente número
+    add bx, dx       ; BX = suma para el próximo número
+    
+    loop fib_loop
+
+    mov ah, 4Ch      ; Termina el programa
+    int 21h
+
+end start
+
+-------------------------------------------------------------------------------
+
+.model small
+.stack 100h
+.data
+    ten dw 10        ; Constante para división
+.code
+start:
+    mov ax, @data
+    mov ds, ax
+
+    mov cx, 10       ; Contador para 10 números
+    mov ax, 0        ; Primer número de Fibonacci
+    mov bx, 1        ; Segundo número de Fibonacci
+    
+fib_loop:
+    push cx          ; Guarda el contador del loop
+    call print_num   ; Llama a la subrutina para imprimir el número
+    
+    mov cx, ax       ; Guarda el número anterior
+    mov ax, bx       ; AX = siguiente número
+    add bx, cx       ; BX = suma para el próximo número
+    
+    pop cx           ; Recupera el contador del loop
+    loop fib_loop
+
+    mov ah, 4Ch      ; Termina el programa
+    int 21h
+
+print_num proc
+    push ax
+    push bx
+    push cx
+    push dx
+
+    mov bx, 0        ; Contador de dígitos
+    mov cx, 0        ; Inicializa CX para usar como pila temporal
+
+divide_loop:
+    xor dx, dx       ; Limpia DX para la división
+    div [ten]        ; Divide AX por 10, cociente en AX, residuo en DX
+    push dx          ; Guarda el residuo (dígito) en la pila
+    inc bx           ; Incrementa el contador de dígitos
+    test ax, ax      ; Verifica si el cociente es 0
+    jnz divide_loop  ; Si no es 0, continúa dividiendo
+
+print_loop:
+    pop dx           ; Obtiene un dígito de la pila
+    add dl, 30h      ; Convierte a ASCII
+    mov ah, 2        ; Función de impresión de carácter
+    int 21h
+    dec bx           ; Decrementa el contador de dígitos
+    jnz print_loop   ; Si quedan dígitos, continúa imprimiendo
+
+    mov dl, 20h      ; Espacio ASCII
+    mov ah, 2        ; Función de impresión de carácter
+    int 21h          ; Imprime un espacio
+
+    pop dx
+    pop cx
+    pop bx
+    pop ax
+    ret
+print_num endp
+
+end start
