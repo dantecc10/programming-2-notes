@@ -10,7 +10,7 @@ public class main {
         clasificador.agregarPlanta(new Maiz("Maíz dulce"));
         clasificador.agregarPlanta(new Rosal("Rosal silvestre"));
 
-        System.out.println("Clasificación de plantas:");
+        System.out.println("\nClasificación de plantas:");
         clasificador.mostrarClasificacion();
 
         System.out.println("\nProceso de fotosíntesis:");
