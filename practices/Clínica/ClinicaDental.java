@@ -11,7 +11,6 @@ public class ClinicaDental {
     private static int dentistaID = 0;
 
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
 
 
         input.close();
@@ -70,6 +69,34 @@ public class ClinicaDental {
     }
 
     public static void menu() {
-        
+
+        int opc;
+
+        System.out.println("-------| Menu |-------");
+        System.out.println("1.     Añadir paciente");
+        System.out.println("2.     Añadir dentista");
+        System.out.println("3.    Asignar dentista");
+        System.out.println("4.  Estado de paciente");
+        System.out.println("----------------------");
+        System.out.println("Opcion: ");
+        opc = input.nextInt();
+
+        switch (opc) {
+            case 1:
+                fillPaciente();
+                break;
+            case 2:
+                fillDentista();
+                break;
+            case 3:
+                Paciente.setDoctor();
+                break;
+            case 4:
+                Paciente.getEstado();
+                break;
+            default:
+                System.out.println("Opcion invalida, reiniciando...");
+                break;
+        }
     }
 }
