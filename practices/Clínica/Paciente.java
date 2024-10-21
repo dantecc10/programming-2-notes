@@ -57,7 +57,7 @@ public class Paciente extends Persona {
         }
     }
     
-    public String obtenerEstado() {
+    public String getEstado() {
         if (tieneDoctor) {
             return "El paciente " + getNombre() + " está siendo atendido por el dentista " +
                    getDoctor().getNombre() + ", especializado en " + getDoctor().getEspecializacion();
