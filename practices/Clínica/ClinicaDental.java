@@ -3,11 +3,12 @@ package practices.Clínica;
 import java.util.Scanner;
 
 public class ClinicaDental {
+    
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         // Crear un dentista
-        System.out.println("Ingrese los datos del dentista:");
+        System.out.println("Datos del dentista:");
         System.out.print("Nombre: ");
         String nombreDentista = scanner.nextLine();
         System.out.print("Dirección: ");
@@ -35,7 +36,7 @@ public class ClinicaDental {
         System.out.print("Teléfono: ");
         String telefonoPaciente = scanner.nextLine();
         System.out.print("Número de Paciente: ");
-        int numeroPaciente = Integer.parseInt(scanner.nextLine());
+        String numeroPaciente = scanner.nextLine();
         System.out.print("Próxima Cita: ");
         String proximaCita = scanner.nextLine();
         System.out.print("Problema Dental: ");
