@@ -231,6 +231,20 @@ El compilador no compila para la plataforma de origen, sino para una plataforma 
 
 Java no poseee aritmética de punteros. No se necesita hacer delete y no hay eherencia múltiple.
 
+## Recursividad
+
+Una función recursiva es aquella que se llama a sí misma. Es invocada para solucionar un problema y dicha función sabe cómo resolver los casos.
+
+La recursividad es una alternativa a la repetición o iteración.
+
+En tiempo de computadora y ocupación de memoria, la solución recursiva es menos eficiente que la iterativa; existen situaciones en las que la recursividad es una solución simple y natural a un problema que en otro caso será difícil de resolver.
+
+### Ejemplo
+
+El factorial de un entero no negativo *n*, está definido como:
+
+n! = n * (n-1) * (n-2) * ... * 2 * 1
+
 ## Independiente de Plataforma
 
 Es la capacidad del programa de trasladarse con facilidad de un sistema a otro. Los datos primitivos de Java tiene tamaño consistente, independientemente de la plataforma en la que sean compilados.
