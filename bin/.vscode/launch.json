@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "AplicaFactorial",
+            "request": "launch",
+            "mainClass": "Factoriales.AplicaFactorial",
+            "projectName": "programming-2-notes"
+        },
+        {
+            "type": "java",
+            "name": "AplicaInfinito",
+            "request": "launch",
+            "mainClass": "AplicaInfinito",
+            "projectName": "programming-2-notes"
+        },
+        {
+            "type": "java",
             "name": "Main",
             "request": "launch",
             "mainClass": "practices.instrumentsdev.Main",
