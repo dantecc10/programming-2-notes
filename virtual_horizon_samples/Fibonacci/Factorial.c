@@ -1,17 +1,21 @@
 #include <stdio.h>
 
-int fact(int n) {
+int fact(int n)
+{
     int i;
-    
-    if(n == 0 || n == 1) {
+
+    if (n == 0 || n == 1)
+    {
         return 1;
-    } else {
+    }
+    else
+    {
         return n * fact(n - 1);
     }
-    
 }
 
-int main(){
+int main()
+{
     int n;
     printf("Introduce un numero: ");
     scanf("%i", &n);
