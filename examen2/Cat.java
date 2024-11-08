@@ -44,7 +44,6 @@ public class Cat extends AnimalSound {
                 clip.start();
                 clip.wait();
             }
-            
 
         } catch (UnsupportedAudioFileException | IOException | LineUnavailableException e) {
             System.err.println("Error al reproducir el sonido");
