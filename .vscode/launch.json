@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Calificaciones",
+            "request": "launch",
+            "mainClass": "practices.Practica15.Calificaciones",
+            "projectName": "programming-2-notes"
+        },
+        {
+            "type": "java",
             "name": "AplicaParImpar",
             "request": "launch",
             "mainClass": "virtual_horizon_samples.Recursividad.AplicaParImpar",
