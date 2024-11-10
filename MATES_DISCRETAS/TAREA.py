@@ -9,7 +9,7 @@ def solicitar_matriz(filas, columnas, nombre="matriz"):
 filas = int(input("Ingresa el número de filas: "))
 columnas = int(input("Ingresa el número de columnas: "))
 matriz_A = solicitar_matriz(filas, columnas, "matriz A")
-print("\nMatriz A en NumPy:\n", matriz_A)
+print("\nMatriz A:\n", matriz_A)
 
 # Operaciones con matrices
 def producto_matricial_booleano(A, B):
