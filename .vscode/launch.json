@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Monedero",
+            "request": "launch",
+            "mainClass": "examen2.Monedero",
+            "projectName": "programming-2-notes"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "examen2.Main",
+            "projectName": "programming-2-notes"
+        },
+        {
+            "type": "java",
+            "name": "Monedero2",
+            "request": "launch",
+            "mainClass": "examen2.Monedero2",
+            "projectName": "programming-2-notes"
+        },
+        {
+            "type": "java",
+            "name": "Principal",
+            "request": "launch",
+            "mainClass": "examen2.Principal",
+            "projectName": "programming-2-notes"
+        },
+        {
+            "type": "java",
             "name": "Menu",
             "request": "launch",
             "mainClass": "examen2.Menu",
