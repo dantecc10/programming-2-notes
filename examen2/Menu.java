@@ -47,7 +47,7 @@ public class Menu {
 
         switch (opc) {
             case 1:
-                // Temperaturas
+                new Temperatura();
                 break;
             case 2:
                 // Herencia
