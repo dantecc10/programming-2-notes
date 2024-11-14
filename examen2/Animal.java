@@ -3,6 +3,7 @@ package examen2;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+// Clase Padre
 public class Animal {
     
     protected String especie;
@@ -23,6 +24,7 @@ public class Animal {
         // Simula el sonido del animal
     }
 
+    // Llena un arreglo con instancias de las clases hijas
     public static Animal[] crearArreglo() {
 
         Animal[] lista = new Animal[4];
@@ -35,6 +37,7 @@ public class Animal {
         return lista;
     }
 
+    // Menu usado para mostrar los datos
     public static void menu() {
 
         Animal[] lista = crearArreglo();
@@ -55,6 +58,7 @@ public class Animal {
 
         boolean flag = false;
             
+        // Verificacion de opciones
         while (opc != 5) {
             while(!flag) {
                 try {
@@ -78,6 +82,7 @@ public class Animal {
                 }
             }
 
+            // Impresion de lo solicitado
             System.out.println("");
             switch (opc) {
                 case 1:
@@ -107,13 +112,15 @@ public class Animal {
                 case 5:
                     break;
             }
+
+            // Asigna falso a la bandera usada al leer la opcion, para repetir el ciclo correctamente
             flag = false;
         }
         
     }
 
 }
-// -----| Clases hijas |-----
+// --------------------| Clases hijas |--------------------
 class Perro extends Animal {
 
     public Perro(String nombre, String especie) {
