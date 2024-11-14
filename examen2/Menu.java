@@ -53,7 +53,7 @@ public class Menu {
                     new Temperatura();
                     break;
                 case 2:
-                    // Herencia
+                    Animal.menu();
                     break;
                 case 3:
                     // Abstraccion

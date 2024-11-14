@@ -1,5 +1,8 @@
 package examen2;
 
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
 public class Animal {
     
     protected String especie;
@@ -18,6 +21,95 @@ public class Animal {
 
     public void sonido() {
         // Simula el sonido del animal
+    }
+
+    public static Animal[] crearArreglo() {
+
+        Animal[] lista = new Animal[4];
+
+        lista[0] = new Perro("Perro Schnauzer", "Canis lupus familiaris");
+        lista[1] = new Delfin("Delfin", "Delphinus delphis");
+        lista[2] = new Aguila("Aguila calva", "Haliaeetus leucocephalus");
+        lista[3] = new Vaca("Vaca", "Bos taurus");
+
+        return lista;
+    }
+
+    public static void menu() {
+
+        Animal[] lista = crearArreglo();
+
+        Scanner input = new Scanner(System.in);
+        int opc = 0;
+
+        System.out.print("""
+            --------------| Animales |-------------
+            Por favor elija una opcion para mostrar
+
+            1.                                Perro
+            2.                               Delfin
+            3.                               Aguila
+            4.                                 Vaca
+            5.                                Salir
+            """);
+
+        boolean flag = false;
+            
+        while (opc != 5) {
+            while(!flag) {
+                try {
+
+                    System.out.print("---------------------------------------\nOpcion: ");
+                    opc = input.nextInt();
+                    if (opc < 1 || opc > 5) {
+                        throw new OutBoundsException();
+                    }
+                    flag = true;
+                    
+                } catch (InputMismatchException e) {
+                    System.err.print("Opcion no numerica");
+                } catch (OutBoundsException e) {
+                    System.err.print(e.getMessage());
+                } finally {
+                    input.nextLine();
+                    if (!flag) {
+                        System.out.println(", intente de nuevo");
+                    }
+                }
+            }
+
+            System.out.println("");
+            switch (opc) {
+                case 1:
+                    System.out.println("Descripcion:");
+                    lista[0].describir();
+                    System.out.println("Sonido caracteristico:");
+                    lista[0].sonido();
+                    break;
+                case 2:
+                    System.out.println("Descripcion:");
+                    lista[1].describir();
+                    System.out.println("Sonido caracteristico:");
+                    lista[1].sonido();
+                    break;
+                case 3:
+                    System.out.println("Descripcion:");
+                    lista[2].describir();
+                    System.out.println("Sonido caracteristico:");
+                    lista[2].sonido();
+                    break;
+                case 4:
+                    System.out.println("Descripcion:");
+                    lista[3].describir();
+                    System.out.println("Sonido caracteristico:");
+                    lista[3].sonido();
+                    break;
+                case 5:
+                    break;
+            }
+            flag = false;
+        }
+        
     }
 
 }
