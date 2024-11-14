@@ -1,4 +1,4 @@
-package practices.Clínica;
+package Programas.practices.Clínica;
 
 import java.util.Scanner;
 

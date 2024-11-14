@@ -1,4 +1,4 @@
-package practices.Clínica;
+package Programas.practices.Clínica;
 
 public class Dentista extends Persona {
 

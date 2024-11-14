@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ClinicaDental",
+            "request": "launch",
+            "mainClass": "Programas.practices.Clínica.ClinicaDental",
+            "projectName": "programming-2-notes"
+        },
+        {
+            "type": "java",
+            "name": "Calificaciones",
+            "request": "launch",
+            "mainClass": "Programas.practices.Practica15.Calificaciones",
+            "projectName": "programming-2-notes"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Programas.practices.Practica18.Main",
+            "projectName": "programming-2-notes"
+        },
+        {
+            "type": "java",
+            "name": "ParesImpares",
+            "request": "launch",
+            "mainClass": "Programas.practices.Practica18.ParesImpares",
+            "projectName": "programming-2-notes"
+        },
+        {
+            "type": "java",
             "name": "CuentaArchivo",
             "request": "launch",
             "mainClass": "Programas.practices.Practica17.CuentaArchivo",
