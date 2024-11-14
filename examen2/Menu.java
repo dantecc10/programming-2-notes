@@ -10,6 +10,8 @@ public class Menu {
         Scanner input = new Scanner(System.in);
         int opc = 0;
 
+        Monedero monedero = new Monedero();
+
         while (opc != 5) {
             clean();
             System.out.print("""
@@ -59,7 +61,7 @@ public class Menu {
                     // Abstraccion
                     break;
                 case 4:
-                    new Monedero();
+                    monedero.menu();
                     break;
                 case 5:
                     clean();

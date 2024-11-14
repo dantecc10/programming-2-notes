@@ -46,10 +46,16 @@ class Datos {
 // Clase principal Monedero
 public class Monedero {
 
-    public Monedero() {
+    Datos miMonedero;
 
+    public Monedero() {
+        // Inicia sin saldo, usando la clase Datos
+        miMonedero = new Datos();
+    }
+
+    public void menu() {
+        
         Scanner scanner = new Scanner(System.in);
-        Datos miMonedero = new Datos(); // Inicia sin saldo, usando la clase Datos
         int opcion;
         
         do {
