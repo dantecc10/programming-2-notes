@@ -47,9 +47,9 @@ public class Menu {
                 }
             }
 
+            clean();
             switch (opc) {
                 case 1:
-                    clean();
                     new Temperatura();
                     break;
                 case 2:
@@ -59,7 +59,7 @@ public class Menu {
                     // Abstraccion
                     break;
                 case 4:
-                    // Monedero
+                    new Monedero();
                     break;
                 case 5:
                     clean();

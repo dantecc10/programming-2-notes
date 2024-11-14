@@ -45,7 +45,9 @@ class Datos {
 
 // Clase principal Monedero
 public class Monedero {
-    public static void main(String[] args) {
+
+    public Monedero() {
+
         Scanner scanner = new Scanner(System.in);
         Datos miMonedero = new Datos(); // Inicia sin saldo, usando la clase Datos
         int opcion;
@@ -79,7 +81,5 @@ public class Monedero {
                     System.out.println("Opción no válida");
             }
         } while (opcion != 4);
-        
-        scanner.close();
     }
 }

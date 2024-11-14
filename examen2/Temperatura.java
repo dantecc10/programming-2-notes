@@ -80,6 +80,7 @@ public class Temperatura {
         }
     }
 
+    // Convierte la temperatura
     public Double convert(double temp, char scale) {
 
         // Dependiendo la escala ingresada se convierte de una forma, u otra
