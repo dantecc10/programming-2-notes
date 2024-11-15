@@ -70,10 +70,10 @@ public class Monedero {
             
             switch (opcion) {
                 case 1:
-                    miMonedero.meterDinero(Input.veryfyDouble("Ingrese la cantidad a meter: $"));
+                    miMonedero.meterDinero(Input.verifyDouble("Ingrese la cantidad a meter: $"));
                     break;
                 case 2:
-                    miMonedero.sacarDinero(Input.veryfyDouble("Ingrese la cantidad a sacar: $"));
+                    miMonedero.sacarDinero(Input.verifyDouble("Ingrese la cantidad a sacar: $"));
                     break;
                 case 3:
                     System.out.println("Saldo actual: $" + miMonedero.consultarSaldo());

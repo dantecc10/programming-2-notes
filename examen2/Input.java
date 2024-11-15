@@ -48,7 +48,7 @@ public class Input {
 
     }
 
-    public static double veryfyDouble(String message) {
+    public static double verifyDouble(String message) {
 
         boolean flag = false;
         double value = 0.0;
