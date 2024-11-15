@@ -68,7 +68,6 @@ public class Temperatura {
                 exit = true;
             }
         }
-
     }
 
     // Comprueba si la entrada corresponde al formato solicitado
