@@ -59,6 +59,7 @@ public class Menu {
                     break;
                 case 3:
                     // Abstraccion
+                    SoundPlayer.main(args);
                     break;
                 case 4:
                     monedero.menu();

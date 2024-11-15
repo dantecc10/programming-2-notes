@@ -1,4 +1,4 @@
-package examen2.sounds;
+package examen2;
 
 import java.io.IOException;
 import java.net.URL;

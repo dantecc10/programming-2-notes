@@ -1,4 +1,4 @@
-package examen2.sounds;
+package examen2;
 
 import java.io.IOException;
 import java.net.URL;
@@ -12,7 +12,7 @@ import javax.sound.sampled.UnsupportedAudioFileException;
 public class Lion extends AnimalSound {
 
     public Lion(String name, String sound) {
-        super("Leon", "/examen2/sounds/files/lion-roar.wav");
+        super("Leon", "/examen2/files/lion-roar.wav");
     }
 
     public void playSound() throws InterruptedException {
