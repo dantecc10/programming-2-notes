@@ -24,37 +24,17 @@ public class Menu {
                 4.                      Manejo de activos
                 5.                                  Salir
                 """);
-
-            boolean flag = false;
             
-            while(!flag) {
-                try {
-
-                    System.out.print("-----------------------------------------\nOpcion: ");
-                    opc = input.nextInt();
-                    if (opc < 1 || opc > 5) {
-                        throw new OutBoundsException();
-                    }
-                    flag = true;
-                    
-                } catch (InputMismatchException e) {
-                    System.err.print("Opcion no numerica");
-                } catch (OutBoundsException e) {
-                    System.err.print(e.getMessage());
-                } finally {
-                    input.nextLine();
-                    if (!flag) {
-                        System.out.println(", intente de nuevo");
-                    }
-                }
-            }
+            opc = Input.verifyOpc(1, 5, "-----------------------------------------");
 
             clean();
             switch (opc) {
                 case 1:
+                    // Temperatura
                     new Temperatura();
                     break;
                 case 2:
+                    // Herencia
                     Animal.menu();
                     break;
                 case 3:
@@ -62,11 +42,16 @@ public class Menu {
                     SoundPlayer.main(args);
                     break;
                 case 4:
+                    // Monedero
                     monedero.menu();
                     break;
                 case 5:
+                    // Salir
                     clean();
-                    System.out.print("\nSaliendo...");
+                    System.out.print("""
+                        \n-----------------------------------------
+                        Saliendo...
+                        -----------------------------------------""");
                     break;
             }
         }
@@ -85,12 +70,4 @@ public class Menu {
             e.printStackTrace();
         }
     }
-}
-
-class OutBoundsException extends Exception {
-
-    public OutBoundsException() {
-        super("Opcion fuera de limites");
-    }
-
 }

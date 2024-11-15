@@ -1,4 +1,5 @@
 package examen2;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 // Clase Datos
@@ -53,29 +54,26 @@ public class Monedero {
         miMonedero = new Datos();
     }
 
-    public void menu() {
+    public void menu() throws InputMismatchException, OutBoundsException {
         
         Scanner scanner = new Scanner(System.in);
         int opcion;
         
         do {
-            System.out.println("\n=== MENÚ MONEDERO ===");
-            System.out.println("1. Meter dinero");
-            System.out.println("2. Sacar dinero");
-            System.out.println("3. Consultar saldo");
-            System.out.println("4. Salir");
-            System.out.print("Seleccione una opción: ");
+            System.out.println("\n--------| Menú monedero |--------");
+            System.out.println("1.                   Meter dinero");
+            System.out.println("2.                   Sacar dinero");
+            System.out.println("3.                Consultar saldo");
+            System.out.println("4.                          Salir");
             
-            opcion = scanner.nextInt();
+            opcion = Input.verifyOpc(1, 4, "---------------------------------");
             
             switch (opcion) {
                 case 1:
-                    System.out.print("Ingrese la cantidad a meter: $");
-                    miMonedero.meterDinero(scanner.nextDouble());
+                    miMonedero.meterDinero(Input.veryfyDouble("Ingrese la cantidad a meter: $"));
                     break;
                 case 2:
-                    System.out.print("Ingrese la cantidad a sacar: $");
-                    miMonedero.sacarDinero(scanner.nextDouble());
+                    miMonedero.sacarDinero(Input.veryfyDouble("Ingrese la cantidad a sacar: $"));
                     break;
                 case 3:
                     System.out.println("Saldo actual: $" + miMonedero.consultarSaldo());

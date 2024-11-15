@@ -38,7 +38,7 @@ public class Animal {
     }
 
     // Menu usado para mostrar los datos
-    public static void menu() {
+    public static void menu() throws InputMismatchException, OutBoundsException {
 
         Animal[] lista = crearArreglo();
 
@@ -46,7 +46,7 @@ public class Animal {
         int opc = 0;
 
         System.out.print("""
-            --------------| Animales |-------------
+            \n--------------| Animales |-------------
             Por favor elija una opcion para mostrar
 
             1.                                Perro
@@ -60,27 +60,8 @@ public class Animal {
             
         // Verificacion de opciones
         while (opc != 5) {
-            while(!flag) {
-                try {
-
-                    System.out.print("---------------------------------------\nOpcion: ");
-                    opc = input.nextInt();
-                    if (opc < 1 || opc > 5) {
-                        throw new OutBoundsException();
-                    }
-                    flag = true;
-                    
-                } catch (InputMismatchException e) {
-                    System.err.print("Opcion no numerica");
-                } catch (OutBoundsException e) {
-                    System.err.print(e.getMessage());
-                } finally {
-                    input.nextLine();
-                    if (!flag) {
-                        System.out.println(", intente de nuevo");
-                    }
-                }
-            }
+            
+            opc = Input.verifyOpc(1, 5, "---------------------------------------");
 
             // Impresion de lo solicitado
             System.out.println("");
@@ -123,6 +104,8 @@ public class Animal {
 // --------------------| Clases hijas |--------------------
 class Perro extends Animal {
 
+    public static String raza = "El Schnauzer es una raza de\nperros originaria de Alemania";
+
     public Perro(String nombre, String especie) {
         super(nombre, especie);
     }
@@ -140,11 +123,12 @@ class Perro extends Animal {
     @Override
     public void sonido() {
         System.out.println("Wau, wau");
-    }
-    
+    } 
 }
 
 class Delfin extends Animal {
+
+    public static String tamaño = "El tamaño promedio de los delfines comunes\nes de entre 2.5 y 4 metros de largo";
 
     public Delfin(String nombre, String especie) {
         super(nombre, especie);
@@ -164,10 +148,11 @@ class Delfin extends Animal {
     public void sonido() {
         System.out.println("Iiii, iiii");
     }
-    
 }
 
 class Aguila extends Animal {
+
+    public static String habitad = "Habitad: Suele habitar en zonas\ncercanas a cuerpos de agua como\nlagos, ríos y costas oceánicas";
 
     public Aguila(String nombre, String especie) {
         super(nombre, especie);
@@ -187,10 +172,11 @@ class Aguila extends Animal {
     public void sonido() {
         System.out.println("Kreee");
     }
-    
 }
 
 class Vaca extends Animal {
+
+    private String peso = "El peso promedio de una vaca\noscila entre los 450 y 700 kg";
 
     public Vaca(String nombre, String especie) {
         super(nombre, especie);
@@ -210,5 +196,4 @@ class Vaca extends Animal {
     public void sonido() {
         System.out.println("Muuu");
     }
-
 }

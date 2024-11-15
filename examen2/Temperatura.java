@@ -11,7 +11,7 @@ public class Temperatura {
         Scanner input = new Scanner(System.in);
 
         System.out.println("""
-            -------------| Conversor de temperatura |-------------
+            \n-------------| Conversor de temperatura |-------------
             Bienvenido, ingresa un valor con el siguiente formato:
                                   36 C, 36 F                      
 
