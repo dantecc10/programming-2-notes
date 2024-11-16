@@ -8,6 +8,13 @@
             "type": "java",
             "name": "SoundPlayer",
             "request": "launch",
+            "mainClass": "examen2.SoundPlayer",
+            "projectName": "programming-2-notes"
+        },
+        {
+            "type": "java",
+            "name": "SoundPlayer",
+            "request": "launch",
             "mainClass": "examen2.sounds.SoundPlayer",
             "projectName": "programming-2-notes"
         },

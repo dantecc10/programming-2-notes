@@ -1,13 +1,15 @@
 package examen2;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class SoundPlayer {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InputMismatchException, OutBoundsException {
         SoundPlayer soundPlayer = new SoundPlayer();
         soundPlayer.menu();
     }
+
     public static void play(Integer animal) {
         AnimalSound someAnimalSound = null;
         switch (animal) {
@@ -34,21 +36,20 @@ public class SoundPlayer {
         }
     }
 
-    public void menu() {
+    public void menu() throws InputMismatchException, OutBoundsException {
 
         Scanner scanner = new Scanner(System.in);
         int option;
 
         do {
-            System.out.println("\n=== MENÚ SONIDOS DE ANIMALES ===");
+            System.out.println("\n----| MENÚ SONIDOS DE ANIMALES |----");
             System.out.println("1. León");
             System.out.println("2. Perro");
             System.out.println("3. Gato");
             System.out.println("4. Vaca");
             System.out.println("5. Salir");
-            System.out.print("Seleccione una opción: ");
 
-            option = scanner.nextInt();
+            option = Input.verifyOpc(1, 5, "------------------------------------");
 
             switch (option) {
                 case 5:
