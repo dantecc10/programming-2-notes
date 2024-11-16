@@ -1,0 +1,13 @@
+Para cubrir los requisitos solicitados en el examen, el apartado que ofrece escuchar los sonidos de los animales funciona con un grupo de archivos.
+
+1.- AnimalSound.java:
+Se trata de una clase pública y abstracta que se inicializa con dos parámetros que son cadenas: el nombre del animal, y una ruta al archivo de sonido que se desea asociar.
+
+Así, también se declara un método público y abstracto que las clases adicionales reescribirán.
+
+2.- Dolphin.java:
+Hice una archivo con clase para cada animal que hereda de la clase AnimalSound y que les asigna la ruta al audio, y un nombre, además de que sobreescribe el método abstracto "playSound()" permitiendo la reproducción sencilla del sonido para el animal concreto.
+Además, el método abstracto, ya sobreescrito está listo para hacer un try-catch y reconocer algunos errores comunes asociados a las librerías que permiten emitir sonido.
+
+3.- SoundPlayer.java:
+La clase SoundPlayer muestra el menú en consola para elegir el animal cuyo sonido se desea escuchar. Inmediatamente, llama a la clase que corresponde al animal e invoca al método playSound() para obtener el resultado deseado.
