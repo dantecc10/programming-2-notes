@@ -14,13 +14,13 @@ public class SoundPlayer {
         AnimalSound someAnimalSound = null;
         switch (animal) {
             case 1:
-                someAnimalSound = new Lion("Lion", "");
-                break;
-            case 2:
                 someAnimalSound = new Dog("Dog", "");
                 break;
+            case 2:
+                someAnimalSound = new Dolphin("Dolphin", "");
+                break;
             case 3:
-                someAnimalSound = new Cat("Cat", "");
+                someAnimalSound = new Eagle("Eagle", "");
                 break;
             case 4:
                 someAnimalSound = new Cow("Cow", "");
@@ -43,9 +43,9 @@ public class SoundPlayer {
 
         do {
             System.out.println("\n----| MENÚ SONIDOS DE ANIMALES |----");
-            System.out.println("1. León");
-            System.out.println("2. Perro");
-            System.out.println("3. Gato");
+            System.out.println("1. Perro");
+            System.out.println("2. Delfín");
+            System.out.println("3. Águila");
             System.out.println("4. Vaca");
             System.out.println("5. Salir");
 

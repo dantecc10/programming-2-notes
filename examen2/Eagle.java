@@ -44,7 +44,7 @@ public class Eagle extends AnimalSound {
                 clip.wait();
             }
 
-        } eaglech (UnsupportedAudioFileException | IOException | LineUnavailableException e) {
+        } catch (UnsupportedAudioFileException | IOException | LineUnavailableException e) {
             System.err.println("Error al reproducir el sonido");
             e.printStackTrace();
         }
