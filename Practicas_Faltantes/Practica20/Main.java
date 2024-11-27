@@ -1,9 +1,23 @@
-package Programas.practices.Practica20;
+package Practicas_Faltantes.Practica20;
 
 import java.util.Scanner;
+import Practicas_Faltantes.Clean;
+
+/*
+ * Realizar un programa en Java con métodos de clase que obtenga de manera recursiva:
+ * 
+ * 1. La multiplicación de dos números mediante sumas sucesivas.
+ * Por ejemplo: si n=5 y m=3 obtener 5+5+5=15
+ * 
+ * 2. La potencia de dos números mediante multiplicaciones sucesivas.
+ * Por ejemplo: si n=5 y m=3 obtener 5*5*5=125
+ */
 
 public class Main {
     public static void main(String[] args) {
+
+        Clean.console();
+
         try (Scanner scanner = new Scanner(System.in)) {
             System.out.print("Ingrese el primer número: ");
             int n = scanner.nextInt();
@@ -27,10 +41,10 @@ public class Main {
             }
 
             if (operacion == 1) {
-                int resultado = Multiplicacion.MultiRecursiva(n, m);
+                int resultado = Operaciones.MultiRecursiva(n, m);
                 System.out.println("\nLa multiplicación de " + n + " y " + m + " es: " + resultado);
             } else {
-                int resultado = Potencia.PoteRecursiva(n, m);
+                int resultado = Operaciones.PoteRecursiva(n, m);
                 System.out.println("\nLa potencia de " + n + " elevado a " + m + " es: " + resultado);
             }
         }

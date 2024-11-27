@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "BusquedaRecursiva",
+            "request": "launch",
+            "mainClass": "Practicas_Faltantes.Practica19.BusquedaRecursiva",
+            "projectName": "programming-2-notes"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Practicas_Faltantes.Practica20.Main",
+            "projectName": "programming-2-notes"
+        },
+        {
+            "type": "java",
+            "name": "Bases",
+            "request": "launch",
+            "mainClass": "Practicas_Faltantes.Practica21.Bases",
+            "projectName": "programming-2-notes"
+        },
+        {
+            "type": "java",
             "name": "SoundPlayer",
             "request": "launch",
             "mainClass": "examen2.SoundPlayer",

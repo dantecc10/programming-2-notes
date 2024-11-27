@@ -1,4 +1,4 @@
-package Programas.practices.Practica18;
+package Practicas_Faltantes.Practica18;
 
 public class ParesImpares {
     public static String sumaSecuenciaPares(int n) {

@@ -1,4 +1,4 @@
-package Programas.practices.Practica15;
+package Practicas_Faltantes.Practica15;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 

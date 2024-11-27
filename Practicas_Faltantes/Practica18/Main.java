@@ -1,4 +1,4 @@
-package Programas.practices.Practica18;
+package Practicas_Faltantes.Practica18;
 
 import java.util.Scanner;
 

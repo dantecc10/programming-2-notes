@@ -1,4 +1,4 @@
-package Programas.practices.Practica17;
+package Practicas_Faltantes.Practica17;
 
 import java.io.*;
 import java.util.Scanner;
