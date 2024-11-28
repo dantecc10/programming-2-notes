@@ -20,18 +20,20 @@ public class Main {
 
         try (Scanner scanner = new Scanner(System.in)) {
             System.out.print("Ingrese el primer número: ");
-            int n = scanner.nextInt();
-            while (n <= 0) {
-                System.out.print("El número debe ser positivo. Ingrese el primer número: ");
-                n = scanner.nextInt();
-            }
+            int n;
+            n = scanner.nextInt();
+            // while (n <= 0) {
+            // System.out.print("El número debe ser positivo. Ingrese el primer número: ");
+            // n = scanner.nextInt();
+            // }
 
             System.out.print("Ingrese el segundo número: ");
-            int m = scanner.nextInt();
-            while (m <= 0) {
-                System.out.print("El número debe ser positivo. Ingrese el segundo número: ");
-                m = scanner.nextInt();
-            }
+            int m;
+            m = scanner.nextInt();
+            // while (m <= 0) {
+            // System.out.print("El número debe ser positivo. Ingrese el segundo número: ");
+            // m = scanner.nextInt();
+            // }
 
             System.out.print("\n¿Desea realizar una multiplicación (1) o una potencia (2)? ");
             int operacion = scanner.nextInt();
@@ -41,7 +43,11 @@ public class Main {
             }
 
             if (operacion == 1) {
-                int resultado = Operaciones.MultiRecursiva(n, m);
+                // Define una variable con el valor absoluto de n y m
+
+                int resultado = ((n > 0 && m > 0) || (n < 0 && m < 0))
+                        ? Operaciones.MultiRecursiva(Math.abs(n), Math.abs(m))
+                        : -Operaciones.MultiRecursiva(Math.abs(n), Math.abs(m));
                 System.out.println("\nLa multiplicación de " + n + " y " + m + " es: " + resultado);
             } else {
                 int resultado = Operaciones.PoteRecursiva(n, m);
