@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Calificaciones",
+            "request": "launch",
+            "mainClass": "Practicas_Faltantes.Practica15.Calificaciones",
+            "projectName": "programming-2-notes"
+        },
+        {
+            "type": "java",
+            "name": "ManejoArchivo",
+            "request": "launch",
+            "mainClass": "Practicas_Faltantes.Practica16.ManejoArchivo",
+            "projectName": "programming-2-notes"
+        },
+        {
+            "type": "java",
+            "name": "CuentaArchivo",
+            "request": "launch",
+            "mainClass": "Practicas_Faltantes.Practica17.CuentaArchivo",
+            "projectName": "programming-2-notes"
+        },
+        {
+            "type": "java",
             "name": "Main",
             "request": "launch",
             "mainClass": "Practicas_Faltantes.Practica18.Main",

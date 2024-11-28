@@ -3,22 +3,34 @@ package Practicas_Faltantes.Practica16;
 import java.io.*;
 import java.util.Scanner;
 
+import Practicas_Faltantes.Clean;
+
+/*
+ * Realizar un programa en Java
+ * 
+ * Implementar la clase llamada ManejoArchivo, que permita:
+ * Mostrar el contenido de un archivo en pantalla, pero cada cadena de manera inversa.
+ * Por ejemplo: Si el archivo contiene la cadena "Hola mundo" en pantalla se debe presentar "odnum aloH"
+ */
+
 public class ManejoArchivo {
+
+    private static int lineNumber = 1;
     
     private static String invertirCadena(String cadena) {
         return new StringBuilder(cadena).reverse().toString();
     }
     
-    public void mostrarArchivoInvertido(String nombreArchivo) {
+    public static void mostrarArchivoInvertido(String nombreArchivo) {
+
         try (BufferedReader br = new BufferedReader(new FileReader(nombreArchivo))) {
             String linea;
             System.out.println("\nContenido del archivo invertido:");
-            System.out.println("------------------------------");
+            System.out.println("--------------------------------------------------");
             
             while ((linea = br.readLine()) != null) {
-                System.out.println("Original  : " + linea);
-                System.out.println("Invertido : " + invertirCadena(linea));
-                System.out.println("------------------------------");
+                System.out.println(lineNumber + " " + invertirCadena(linea));
+                lineNumber++;
             }
             
         } catch (IOException e) {
@@ -27,14 +39,15 @@ public class ManejoArchivo {
     }
 
     public static void main(String[] args) {
+
+        Clean.console();
+
         Scanner scanner = new Scanner(System.in);
-        ManejoArchivo manejador = new ManejoArchivo();
         
         System.out.print("Ingrese el nombre del archivo a leer: ");
         String nombreArchivo = scanner.nextLine();
         
-        manejador.mostrarArchivoInvertido(nombreArchivo);
-        
+        mostrarArchivoInvertido(nombreArchivo);
         scanner.close();
     }
 }
