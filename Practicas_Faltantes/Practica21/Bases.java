@@ -41,6 +41,5 @@ public class Bases {
             String result = BasesRecursivas(decimal, base);
             System.out.println(decimal + " en base " + base + " es: " + result);
         }
-
     }
 }

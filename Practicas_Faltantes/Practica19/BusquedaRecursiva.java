@@ -41,17 +41,17 @@ public class BusquedaRecursiva {
 
                 try {
 
-                    System.out.print("\nIngrese la dimension del arreglo: ");
+                    System.out.print("\nIngrese la dimensión del arreglo: ");
                     tamaño = scanner.nextInt();
                     CustomExeption.NegativeIntInput.launchException(tamaño);
 
                 } catch (InputMismatchException e) {
 
-                    System.err.println("Entrada invalida, intente nuevamente");
+                    System.err.println("Entrada inválida, intente nuevamente");
 
                 } catch (CustomExeption.NegativeIntInput e) {
 
-                    System.err.println("La dimension debe ser positiva, intente nuevamente");
+                    System.err.println("La dimensión debe ser positiva, intente nuevamente");
 
                 } finally {
 
