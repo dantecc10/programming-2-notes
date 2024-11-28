@@ -17,5 +17,4 @@ public class Operations {
             return n * PoteRecursiva(n, m - 1);
         }
     }
-
 }

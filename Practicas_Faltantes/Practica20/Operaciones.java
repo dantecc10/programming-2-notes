@@ -13,9 +13,20 @@ public class Operaciones {
     public static int PoteRecursiva(int n, int m) {
         if (m == 1) {
             return n;
-        } else {
-            return n * PoteRecursiva(n, m - 1);
         }
+
+        if (m == 0) {
+            return 1;
+        }
+
+        // return (n > 0) ? n * PoteRecursiva(n, m - 1) : -n * PoteRecursiva(n, m - 1);
+
+        if (n > 0) {
+            return (m > 0) ? n * PoteRecursiva(n, m - 1) : 1 / (n * PoteRecursiva(n, -m - 1));
+        } else {
+            return (m > 0) ? -n * PoteRecursiva(n, m - 1) : 1 / (-n * PoteRecursiva(n, -m - 1));
+        }
+
     }
 
 }
