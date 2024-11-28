@@ -15,6 +15,10 @@ public class Operaciones {
             return n;
         }
 
+        //if(n == 0 && m < 0) {
+        //    return null; // Error fatal
+        //}
+
         if (m == 0) {
             return 1;
         }
@@ -26,7 +30,5 @@ public class Operaciones {
         } else {
             return (m > 0) ? -n * PoteRecursiva(n, m - 1) : 1 / (-n * PoteRecursiva(n, -m - 1));
         }
-
     }
-
 }
