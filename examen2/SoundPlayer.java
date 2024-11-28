@@ -25,6 +25,12 @@ public class SoundPlayer {
             case 4:
                 someAnimalSound = new Cow("Cow", "");
                 break;
+            case 5:
+                someAnimalSound = new Cat("Cat", "");
+                break;
+            case 6:
+                someAnimalSound = new Lion("León", "");
+                break;
             default:
                 System.out.println("Ha ocurrido un error");
         }
@@ -47,17 +53,19 @@ public class SoundPlayer {
             System.out.println("2. Delfín");
             System.out.println("3. Águila");
             System.out.println("4. Vaca");
-            System.out.println("5. Salir");
+            System.out.println("5. Gato");
+            System.out.println("6. León");
+            System.out.println("7. Salir");
 
             option = Input.verifyOpc(1, 5, "------------------------------------");
 
             switch (option) {
-                case 5:
+                case 7:
                     System.out.println("¡Gracias por usar el reproductor!");
                     break;
                 default:
                     play(option);
             }
-        } while (option != 5);
+        } while (option != 7);
     }
 }

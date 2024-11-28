@@ -15,16 +15,16 @@ public class Menu {
         while (opc != 5) {
             clean();
             System.out.print("""
-                --------------| Examen #2 |--------------
-                        Por favor elija una opcion
+                    --------------| Examen #2 |--------------
+                            Por favor elija una opcion
 
-                1.               Conversor de temperatura
-                2.     Descripcion de animales (Herencia)
-                3.      Sonidos de animales (Abstraccion)
-                4.                      Manejo de activos
-                5.                                  Salir
-                """);
-            
+                    1.               Conversor de temperatura
+                    2.     Descripcion de animales (Herencia)
+                    3.      Sonidos de animales (Abstraccion)
+                    4.                      Manejo de activos
+                    5.                                  Salir
+                    """);
+
             opc = Input.verifyOpc(1, 5, "-----------------------------------------");
 
             clean();
@@ -49,16 +49,16 @@ public class Menu {
                     // Salir
                     clean();
                     System.out.print("""
-                        \n-----------------------------------------
-                        Saliendo...
-                        -----------------------------------------""");
+                            \n-----------------------------------------
+                            Saliendo...
+                            -----------------------------------------""");
                     break;
             }
         }
     }
 
     public static void clean() {
-        
+
         // Robado de por ahi
         try {
             if (System.getProperty("os.name").contains("Windows")) {
