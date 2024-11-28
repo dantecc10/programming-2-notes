@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Practicas_Faltantes.Practica18.Main",
+            "projectName": "programming-2-notes"
+        },
+        {
+            "type": "java",
             "name": "BusquedaRecursiva",
             "request": "launch",
             "mainClass": "Practicas_Faltantes.Practica19.BusquedaRecursiva",

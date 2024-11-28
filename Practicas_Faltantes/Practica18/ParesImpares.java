@@ -1,6 +1,7 @@
 package Practicas_Faltantes.Practica18;
 
 public class ParesImpares {
+
     public static String sumaSecuenciaPares(int n) {
         return calcularSumaPares(n, 1, 0, new StringBuilder());
     }
@@ -40,4 +41,5 @@ public class ParesImpares {
         
         return calcularSumaImpares(n, contador + 1, suma, secuencia);
     }
+    
 }
