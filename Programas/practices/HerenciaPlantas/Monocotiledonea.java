@@ -1,4 +1,4 @@
-package practices.HerenciaPlantas;
+package Programas.practices.HerenciaPlantas;
 
 public class Monocotiledonea extends Angiosperma {
     public Monocotiledonea(String nombre, String tipoDeFlor) {

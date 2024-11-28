@@ -1,8 +1,8 @@
-package practices.instrumentsdev;
+package Programas.practices.instrumentsdev;
 
 public class Main {
     public static void main(String[] args) {
-        final String path = "/practices/instrumentsdev/sounds/"; // Cambiar a ruta relativa
+        final String path = "sounds/"; // Cambiar a ruta relativa
         Instrument instruments[];
         instruments = new Instrument[3];
         instruments[0] = new Guitar("Guitar", path + "acoustic-guitar.wav"); // Asegúrate de que la ruta sea correcta

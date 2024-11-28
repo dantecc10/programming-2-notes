@@ -1,7 +1,12 @@
-package practices.HerenciaPlantas;
+package Programas.practices.HerenciaPlantas;
+
+import Practicas_Faltantes.Clean;
 
 public class main {
     public static void main(String[] args) {
+
+        Clean.console();
+
         ClasificadorPlantas clasificador = new ClasificadorPlantas();
 
         clasificador.agregarPlanta(new Musgo("Musgo de turbera"));

@@ -1,4 +1,4 @@
-package practices.HerenciaPlantas;
+package Programas.practices.HerenciaPlantas;
 
 public abstract class Gimnosperma extends PlantaConSemilla {
     public Gimnosperma(String nombre, String tipoDeHoja) {

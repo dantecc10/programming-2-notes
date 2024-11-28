@@ -1,4 +1,4 @@
-package practices.HerenciaPlantas;
+package Programas.practices.HerenciaPlantas;
 
 public abstract class Plantas {
     protected String nombre;

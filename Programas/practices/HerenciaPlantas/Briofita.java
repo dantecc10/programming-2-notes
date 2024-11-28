@@ -1,4 +1,4 @@
-package practices.HerenciaPlantas;
+package Programas.practices.HerenciaPlantas;
 
 public class Briofita extends PlantaSinSemilla {
     public Briofita(String nombre) {

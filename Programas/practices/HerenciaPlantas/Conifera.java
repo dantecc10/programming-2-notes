@@ -1,4 +1,4 @@
-package practices.HerenciaPlantas;
+package Programas.practices.HerenciaPlantas;
 
 public class Conifera extends Gimnosperma {
     public Conifera(String nombre) {
