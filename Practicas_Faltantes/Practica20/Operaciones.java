@@ -2,7 +2,7 @@ package Practicas_Faltantes.Practica20;
 
 public class Operaciones {
 
-    public static int MultiRecursiva(int n, int m) {
+    public static double MultiRecursiva(double n, double m) {
         if (m == 1) {
             return n;
         } else {
@@ -10,7 +10,7 @@ public class Operaciones {
         }
     }
 
-    public static int PoteRecursiva(int n, int m) {
+    public static double PoteRecursiva(double n, double m) {
         if (m == 1) {
             return n;
         }
